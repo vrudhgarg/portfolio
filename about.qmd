@@ -1,0 +1,20 @@
+---
+title: "About"
+image: images/profile.jpg
+about:
+  template: jolla
+  image-shape: round
+  links:
+    - icon: graduation-cap
+      text: Datacamp
+      href: https://www.datacamp.com/portfolio/dhruvsaraf1
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/data-scientist-dhruv-garg/
+    - icon: github
+      text: Github
+      href: https://github.com/vrudhgarg
+
+---
+
+About this blog
