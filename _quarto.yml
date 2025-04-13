@@ -4,6 +4,13 @@ project:
 website:
   title: "Dhruv Garg"
   navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
     right:
       - about.qmd
       - icon: github
