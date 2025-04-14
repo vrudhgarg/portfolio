@@ -1,14 +1,54 @@
 ---
-title: "Portfolio"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
 
+<div class="center intro-section">
+  <h1 class="name-heading">Dhruv Garg</h1>
+  <p class="intro-subheading">Data Scientist &nbsp;|&nbsp; MDS @ UBC</p>
+  <p class="intro-text">3+ years of real-world impact with ML & data engineering</p>
+</div>
 
+
+
+<hr>
+<div class="section-light">
+
+<h2 class="section-heading">Explore My Portfolio</h2>
+
+
+<div class="card-container">
+
+<!-- Projects -->
+<div class="portfolio-card">
+  <img src="images/projects-icon.png" width="60" alt="Projects">
+  <h4>Projects</h4>
+  <p>Where I turned theory into results.</p>
+  <a class="btn" href="projects.qmd">View Projects</a>
+</div>
+
+<!-- Education -->
+<div class="portfolio-card">
+  <img src="images/education-icon.png" width="60" alt="Education">
+  <h4>Education</h4>
+  <p>Degrees and certifications that built my foundation.</p>
+  <a class="btn" href="about.qmd">View Education</a>
+</div>
+
+<!-- Experience -->
+<div class="portfolio-card">
+  <img src="images/work-icon.png" width="60" alt="Experience">
+  <h4>Experience</h4>
+  <p>Why you should hire me?</p>
+  <a class="btn" href="about.qmd#experience">View Experience</a>
+</div>
+
+</div>
+</div>
+<hr>
+
+<div class="social-icons">
+  <a href="https://linkedin.com/in/data-scientist-dhruv-garg" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+  <a href="https://github.com/vrudhgarg" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+  <a href="mailto:d23garg@gmail.com"><i class="bi bi-envelope"></i> Email</a>
+</div>

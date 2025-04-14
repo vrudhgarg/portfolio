@@ -7,11 +7,11 @@
     "text": "I’m Dhruv Garg, a Data Scientist with 3 years of hands-on industry experience and currently pursuing my Master of Data Science at the University of British Columbia. I specialize in designing and deploying machine learning solutions that deliver measurable business value — particularly in marketing analytics and performance optimization.\nPreviously, I’ve worked with startups and IT consultancies across North America, leading initiatives in large-scale data processing, LLM evaluation, marketing attribution modeling, and cloud-based ETL pipelines. My work has led to improved ROI, reduced infrastructure costs, and streamlined analytics workflows.\nIn addition to professional roles, I’ve developed open-source packages and interactive dashboards as part of my academic projects, using tools like Dash, Docker, Quarto, and PySpark.\nI’m passionate about building intelligent systems that are both scalable and human-centered — and always open to collaborating on impactful data projects."
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 13, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -21,17 +21,17 @@
     "text": "This is a post with executable code."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Portfolio",
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 13, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nDhruv Garg\n",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 13, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Dhruv Garg\n\n\nData Scientist  |  MDS @ UBC\n\n\n3+ years of real-world impact with ML & data engineering\n\n\n\n\n\nExplore My Portfolio\n\n\n\n\n\n\nProjects\n\n\nWhere I turned theory into results.\n\nView Projects\n\n\n\n\n\nEducation\n\n\nDegrees and certifications that built my foundation.\n\nView Education\n\n\n\n\n\nExperience\n\n\nWhy you should hire me?\n\nView Experience\n\n\n\n\n\n LinkedIn  GitHub  Email"
   }
 ]

@@ -12,15 +12,19 @@ website:
       - href: resume.qmd
         text: Resume
     right:
-      - about.qmd
+      - href: about.qmd
+        text: About
       - icon: github
         href: https://github.com/vrudhgarg
-      - icon: LinkedIn
+      - icon: linkedin
         href: https://www.linkedin.com/in/data-scientist-dhruv-garg/
+
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
-
-
-
+    toc: false
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
