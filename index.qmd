@@ -21,25 +21,25 @@ title-block-banner: false
 
 <!-- Projects -->
 <div class="portfolio-card">
-  <img src="images/projects-icon.png" width="60" alt="Projects">
-  <h4>Projects</h4>
-  <p>Where I turned theory into results.</p>
+  <img src="images/projects-icon.png" width="60">
+<h4 style="padding: 0 40px; text-align: center;">Projects</h4>
+  <p style="padding-left: 5px; padding-right: 5px; padding-bottom: 24px;">Where I turned theory into results.</p>
   <a class="btn" href="projects.qmd">View Projects</a>
 </div>
 
 <!-- Education -->
 <div class="portfolio-card">
   <img src="images/education-icon.png" width="60" alt="Education">
-  <h4>Education</h4>
-  <p>Degrees and certifications that built my foundation.</p>
-  <a class="btn" href="about.qmd">View Education</a>
+<h4 style="padding: 0 30px; text-align: center;">Education</h4>
+  <p style="padding-left: 5px; padding-right: 5px;">Degrees and certifications that built my foundation.</p>
+  <a class="btn" href="about.qmd#education">View Education</a>
 </div>
 
 <!-- Experience -->
 <div class="portfolio-card">
-  <img src="images/work-icon.png" width="60" alt="Experience">
-  <h4>Experience</h4>
-  <p>Why you should hire me?</p>
+  <img src="images/work-icon.png" width="60">
+<h4 style="padding-bottom: 25px; padding-left: 20px;">Experience</h4>
+<p style="padding-left: 20px; padding-right: 20px; padding-bottom: 8px; padding-top: 15px">Why you should hire me?</p>
   <a class="btn" href="about.qmd#experience">View Experience</a>
 </div>
 
