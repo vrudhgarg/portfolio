@@ -1,0 +1,94 @@
+---
+title: "🚔 Vancouver Crime Statistics Dashboard"
+description: "An interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters."
+date: 2025-02-28
+categories: [R, Shiny, Data Visualization, Crime]
+image: img/demo.png
+format:
+  html:
+    toc: true
+    number-sections: false
+---
+
+## 🎯 Motivation
+
+Crime statistics provide valuable insights into public safety and law enforcement effectiveness. This dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.
+
+Using the dashboard, users can:
+
+- 📈 Track crime trends over time  
+- 🏘️ Compare crime types across neighborhoods  
+- 📆 Analyze monthly crime patterns  
+- 🔍 Filter data by date, location, and type  
+
+---
+
+## 🖥️ App Overview
+
+Built with **Shiny in R**, this dashboard provides an interactive interface for visualizing Vancouver crime data.
+
+### Features
+
+1. 🗺️ **Neighborhood Selection** – choose one or more
+2. 🔍 **Crime Type Filtering** – drill down to specific crimes
+3. 📅 **Date Range Selection** – select time windows
+4. 📊 **Dynamic Plot Selection** – line/bar charts toggle
+5. 🔥 **Heatmap** – monthly crime distribution
+6. 📋 **Interactive Data Table** – full searchable table
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone git@github.ubc.ca:mds-2024-25/DSCI_532_individual-assignment_dgarg001.git
+cd DSCI_532_individual-assignment_dgarg001
+```
+
+### 2️⃣ Set Up R Environment
+
+```r
+install.packages("renv")
+renv::restore()
+```
+
+This will install all dependencies using `renv.lock`.
+
+### 3️⃣ Run the App
+
+**Option A** – Inside R:
+
+```r
+shiny::runApp('src')
+```
+
+**Option B** – From terminal:
+
+```bash
+cd src
+Rscript -e "shiny::runApp()"
+```
+
+---
+
+## 🎥 Demo
+
+A walkthrough of the dashboard is available here:  
+📽️ [`demo.mp4`](../images/demo.mp4)
+
+---
+
+## 🧾 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🙏 Acknowledgments
+
+- 📊 Data Source: [Vancouver Police Department](https://vpd.ca/crime-statistics/)  
+- 🎓 UBC MDS Program for project structure & support
+```
+
