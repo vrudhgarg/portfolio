@@ -11,7 +11,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n🛒 RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚔 Vancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n🛒 RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚔 Vancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🔢 num_theory: Number Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA fast and intuitive Python package for solving Project Euler problems through prime operations, arithmetic progressions, and more.\n\n\n\n\n\nJan 30, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -110,5 +110,75 @@
     "title": "🚔 Vancouver Crime Statistics Dashboard",
     "section": "⚙️ Installation & Setup",
     "text": "⚙️ Installation & Setup\n\n1️⃣ Clone the Repository\ngit clone git@github.ubc.ca:mds-2024-25/DSCI_532_individual-assignment_dgarg001.git\ncd DSCI_532_individual-assignment_dgarg001\n\n\n2️⃣ Set Up R Environment\ninstall.packages(\"renv\")\nrenv::restore()\nThis will install all dependencies using renv.lock.\n\n\n3️⃣ Run the App\nOption A – Inside R:\nshiny::runApp('src')\nOption B – From terminal:\ncd src\nRscript -e \"shiny::runApp()\""
+  },
+  {
+    "objectID": "posts/num-theory/index.html#about-the-package",
+    "href": "posts/num-theory/index.html#about-the-package",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "📦 About the Package",
+    "text": "📦 About the Package\nnum_theory is a high-performance Python package designed to streamline solving number theory problems — especially those found on Project Euler. It offers:\n\nFast prime number generation\nPrimality tests\nPrime factorization\nArithmetic progression tools\nIntuitive, simple API design"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#installation",
+    "href": "posts/num-theory/index.html#installation",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "🧪 Installation",
+    "text": "🧪 Installation\npip install num_theory_euler_problems"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#core-features",
+    "href": "posts/num-theory/index.html#core-features",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "🔧 Core Features",
+    "text": "🔧 Core Features\n\n🧮 get_primes(n) — Generate all primes less than n\n🔍 is_prime(n) — Efficient primality testing\n🧠 prime_factorization(n) — Return prime factors with powers\n➕ arithmetic_progression(a, d, n) — Compute terms, sum, or nth term in AP"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#usage-examples",
+    "href": "posts/num-theory/index.html#usage-examples",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "🧑‍💻 Usage Examples",
+    "text": "🧑‍💻 Usage Examples\nfrom num_theory import get_primes, is_prime, prime_factorization\n\nget_primes(10)           # [2, 3, 5, 7]\nis_prime(17)             # True\nprime_factorization(84)  # [(2, 2), (3, 1), (7, 1)]\n\nReal-Life Example: Monthly Savings\nfrom num_theory import arithmetic_progression\n\n# Save $50, increasing by $20 each month\narithmetic_progression(a=50, d=20, n=6)               # [50, 70, 90, 110, 130, 150]\narithmetic_progression(a=50, d=20, n=6, compute_sum=True)  # 600.0\narithmetic_progression(a=50, d=20, n=6, nth_term=True)     # 150"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#euler-problem-examples",
+    "href": "posts/num-theory/index.html#euler-problem-examples",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "🧠 Euler Problem Examples",
+    "text": "🧠 Euler Problem Examples\n\nProblem 3: Largest Prime Factor\nfrom num_theory import prime_factorization\n\nfactors = prime_factorization(600851475143)\nlargest_prime = factors[-1][0]\nprint(largest_prime)  # Output: 6857\n\n\nProblem 10: Sum of Primes Below Two Million\nfrom num_theory import get_primes\n\nprimes = get_primes(2_000_000)\nprint(sum(primes))  # Output: 142913828922"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#why-use-num_theory",
+    "href": "posts/num-theory/index.html#why-use-num_theory",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "🥇 Why Use num_theory?",
+    "text": "🥇 Why Use num_theory?\n\n⚡ Optimized for large computations\n🧩 Consolidated utility functions\n🧪 Speed + Simplicity\n📚 Project Euler–focused"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#contributing",
+    "href": "posts/num-theory/index.html#contributing",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "🤝 Contributing",
+    "text": "🤝 Contributing\nWe welcome contributions! Please see the contributing guidelines and code of conduct."
+  },
+  {
+    "objectID": "posts/num-theory/index.html#authors",
+    "href": "posts/num-theory/index.html#authors",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "👥 Authors",
+    "text": "👥 Authors\n\nDhruv Garg\n\nDominic Lam\n\nThamer Aldawood\n\nTingting Chen"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#license",
+    "href": "posts/num-theory/index.html#license",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "📄 License",
+    "text": "📄 License\nLicensed under the MIT License"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#built-with",
+    "href": "posts/num-theory/index.html#built-with",
+    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "section": "🧱 Built With",
+    "text": "🧱 Built With\n\ncookiecutter + py-pkgs-cookiecutter ```"
   }
 ]

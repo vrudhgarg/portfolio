@@ -1,0 +1,127 @@
+---
+title: "🔢 num_theory: Number Theory Utilities for Project Euler"
+description: "A fast and intuitive Python package for solving Project Euler problems through prime operations, arithmetic progressions, and more."
+date: 2025-01-30
+categories: [Python, Package, Project Euler, Number Theory]
+image: img/num_theory_banner.png  # Replace with your actual image or badge screenshot
+format:
+  html:
+    toc: true
+    number-sections: false
+---
+
+[![PyPI](https://img.shields.io/pypi/v/num-theory-euler-problems?color=blue&label=PyPI)](https://pypi.org/project/num-theory-euler-problems/)
+[![codecov](https://codecov.io/gh/UBC-MDS/num_theory/graph/badge.svg?token=D83Q1sJfPf)](https://codecov.io/gh/UBC-MDS/num_theory)
+[![Documentation Status](https://readthedocs.org/projects/num-theory/badge/?version=latest)](https://num-theory.readthedocs.io/en/latest/?badge=latest)
+
+## 📦 About the Package
+
+**`num_theory`** is a high-performance Python package designed to streamline solving number theory problems — especially those found on [Project Euler](https://projecteuler.net/). It offers:
+
+- Fast prime number generation
+- Primality tests
+- Prime factorization
+- Arithmetic progression tools
+- Intuitive, simple API design
+
+---
+
+## 🧪 Installation
+
+```bash
+pip install num_theory_euler_problems
+```
+
+---
+
+## 🔧 Core Features
+
+- 🧮 **`get_primes(n)`** — Generate all primes less than `n`
+- 🔍 **`is_prime(n)`** — Efficient primality testing
+- 🧠 **`prime_factorization(n)`** — Return prime factors with powers
+- ➕ **`arithmetic_progression(a, d, n)`** — Compute terms, sum, or nth term in AP
+
+---
+
+## 🧑‍💻 Usage Examples
+
+```python
+from num_theory import get_primes, is_prime, prime_factorization
+
+get_primes(10)           # [2, 3, 5, 7]
+is_prime(17)             # True
+prime_factorization(84)  # [(2, 2), (3, 1), (7, 1)]
+```
+
+### Real-Life Example: Monthly Savings
+
+```python
+from num_theory import arithmetic_progression
+
+# Save $50, increasing by $20 each month
+arithmetic_progression(a=50, d=20, n=6)               # [50, 70, 90, 110, 130, 150]
+arithmetic_progression(a=50, d=20, n=6, compute_sum=True)  # 600.0
+arithmetic_progression(a=50, d=20, n=6, nth_term=True)     # 150
+```
+
+---
+
+## 🧠 Euler Problem Examples
+
+### Problem 3: Largest Prime Factor
+
+```python
+from num_theory import prime_factorization
+
+factors = prime_factorization(600851475143)
+largest_prime = factors[-1][0]
+print(largest_prime)  # Output: 6857
+```
+
+### Problem 10: Sum of Primes Below Two Million
+
+```python
+from num_theory import get_primes
+
+primes = get_primes(2_000_000)
+print(sum(primes))  # Output: 142913828922
+```
+
+---
+
+## 🥇 Why Use `num_theory`?
+
+- ⚡ **Optimized for large computations**
+- 🧩 **Consolidated utility functions**
+- 🧪 **Speed + Simplicity**
+- 📚 **Project Euler–focused**
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see the [contributing guidelines](https://github.com/UBC-MDS/num_theory/blob/main/CONTRIBUTING.md) and [code of conduct](https://github.com/UBC-MDS/num_theory/blob/main/CONDUCT.md).
+
+---
+
+## 👥 Authors
+
+- Dhruv Garg  
+- Dominic Lam  
+- Thamer Aldawood  
+- Tingting Chen
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](https://github.com/UBC-MDS/num_theory/blob/main/LICENSE.md)
+
+---
+
+## 🧱 Built With
+
+- `cookiecutter` + [py-pkgs-cookiecutter](https://github.com/py-pkgs/py-pkgs-cookiecutter)
+```
+
+---
