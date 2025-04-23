@@ -1,9 +1,39 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
-date: "2025-04-13"
-categories: [news, code, analysis]
-image: "image.jpg"
+title: "🛒 RetailPulse: Online Retail Analytics Dashboard"
+description: "An interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas."
+date: 2025-03-15
+categories: [Dash, Visualization, Retail, Python]
+image: image.png
+format:
+  html:
+    toc: true
+    number-sections: false
 ---
 
-This is a post with executable code.
+## 🎯 Motivation and Purpose
+
+Retail operations managers face challenges in managing inventory, tracking sales trends, and identifying market expansion opportunities. Making informed decisions swiftly is crucial to staying competitive.  
+**RetailPulse** was created to bridge this gap by providing an **interactive, data-driven dashboard 📊** that enables retailers to gain **real-time insights** into their business performance.
+
+## 📂 Data Attribution
+
+This project uses data from the [Online Retail Dataset](https://archive.ics.uci.edu/dataset/352/online+retail) available on **UC Irvine Machine Learning Repository**.
+
+## 🚀 Features
+
+- 📈 Monitor **sales trends** over time with interactive charts  
+- 🔄 Analyze **customer retention** and repeat purchasing behavior  
+- 🌍 Visualize **regional sales** with maps  
+- 📦 Evaluate **product performance** using bar charts and word clouds  
+
+![RetailPulse Demo](../../images/m4.gif)
+
+## 🛠 Running the App Locally
+
+```bash
+git clone https://github.com/UBC-MDS/DSCI-532_2025_15_RetailPulse.git
+cd DSCI-532_2025_15_RetailPulse
+conda env create -f environment.yaml
+conda activate retailpulse
+python src/app.py
+```
