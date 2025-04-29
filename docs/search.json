@@ -11,7 +11,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n🛒 RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚔 Vancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🔢 num_theory: Number Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA fast and intuitive Python package for solving Project Euler problems through prime operations, arithmetic progressions, and more.\n\n\n\n\n\nJan 30, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n🛒 RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚔 Vancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🔢 num_theory: Number Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA fast and intuitive Python package for solving Project Euler problems through prime operations, arithmetic progressions, and more.\n\n\n\n\n\nJan 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚲 Seoul Bike Share Predictor\n\n\n\n\n\n\nPython\n\n\nMachine Learning\n\n\nForecasting\n\n\nDocker\n\n\n\nPredicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/num-theory/index.html#about-the-package",
@@ -180,5 +180,61 @@
     "title": "\nDhruv Garg\n",
     "section": "",
     "text": "Dhruv Garg\n\n\nData Scientist  |  MDS @ UBC\n\n\n3+ years of real-world impact with ML & data engineering\n\n\n\n\n\nExplore My Portfolio\n\n\n\n\n\n\nProjects\n\n\nWhere I turned theory into results.\n\nView Projects\n\n\n\n\n\nEducation\n\n\nDegrees and certifications that built my foundation.\n\nView Education\n\n\n\n\n\nExperience\n\n\nWhy you should hire me?\n\nView Experience\n\n\n\n\n\n LinkedIn  GitHub  Email"
+  },
+  {
+    "objectID": "posts/seoul_bike_predictor/index.html",
+    "href": "posts/seoul_bike_predictor/index.html",
+    "title": "🚲 Seoul Bike Share Predictor",
+    "section": "",
+    "text": "Rental bikes improve urban mobility, but predicting demand is critical for maintaining a stable supply. This project uses historical bike rental, weather, and holiday data to forecast hourly bike demand in Seoul.\nThe dataset was sourced from the UCI Machine Learning Repository and described in studies by Sathishkumar V E, Jangwoo Park, and Yongyun Cho."
+  },
+  {
+    "objectID": "posts/seoul_bike_predictor/index.html#about-the-project",
+    "href": "posts/seoul_bike_predictor/index.html#about-the-project",
+    "title": "🚲 Seoul Bike Share Predictor",
+    "section": "",
+    "text": "Rental bikes improve urban mobility, but predicting demand is critical for maintaining a stable supply. This project uses historical bike rental, weather, and holiday data to forecast hourly bike demand in Seoul.\nThe dataset was sourced from the UCI Machine Learning Repository and described in studies by Sathishkumar V E, Jangwoo Park, and Yongyun Cho."
+  },
+  {
+    "objectID": "posts/seoul_bike_predictor/index.html#project-features",
+    "href": "posts/seoul_bike_predictor/index.html#project-features",
+    "title": "🚲 Seoul Bike Share Predictor",
+    "section": "📈 Project Features",
+    "text": "📈 Project Features\n\n🔍 Predicts hourly rental demand based on weather and calendar variables\n📦 Fully Dockerized environment setup for easy reproducibility\n🛠 Automated workflows with Makefile commands\n📊 Exploratory Data Analysis (EDA), model fitting, evaluation\n📝 Comprehensive reporting and model interpretation"
+  },
+  {
+    "objectID": "posts/seoul_bike_predictor/index.html#setup-instructions",
+    "href": "posts/seoul_bike_predictor/index.html#setup-instructions",
+    "title": "🚲 Seoul Bike Share Predictor",
+    "section": "🖥️ Setup Instructions",
+    "text": "🖥️ Setup Instructions\n\n1️⃣ Pre-requisites\n\nDocker (latest version)\nDocker Compose\nConda and Conda-Lock\n\n\n\n2️⃣ Run the Analysis\nStart Docker Compose:\ndocker compose up\nOpen the link provided (http://127.0.0.1:8888/lab?token=...) in your browser to launch JupyterLab.\n\n\n\n3️⃣ Reset or Rerun the Workflow\nClean previously generated outputs:\nmake clean\nRun the full analysis pipeline:\nmake all\nRun individual steps:\nmake dats\nmake preprocess\nmake eda\nmake fit\nmake evaluate\n\n\n\n🧹 Cleaning Commands\nYou can clean specific artifacts with:\nmake clean-dats\nmake clean-figs\nmake clean-tables\nmake clean-models\nmake clean-reports"
+  },
+  {
+    "objectID": "posts/seoul_bike_predictor/index.html#adding-a-new-dependency",
+    "href": "posts/seoul_bike_predictor/index.html#adding-a-new-dependency",
+    "title": "🚲 Seoul Bike Share Predictor",
+    "section": "📦 Adding a New Dependency",
+    "text": "📦 Adding a New Dependency\n\nAdd the dependency to environment.yml\nUpdate lock file:\n\nconda-lock -k explicit --file environments/environment.yml -p linux-64\n\nRebuild Docker image\nUpdate docker-compose.yml to use the new image tag\nPush and submit a Pull Request"
+  },
+  {
+    "objectID": "posts/seoul_bike_predictor/index.html#license",
+    "href": "posts/seoul_bike_predictor/index.html#license",
+    "title": "🚲 Seoul Bike Share Predictor",
+    "section": "📝 License",
+    "text": "📝 License\n\nSoftware code: MIT License\nReport: CC BY-NC-SA 4.0 License"
+  },
+  {
+    "objectID": "posts/seoul_bike_predictor/index.html#authors",
+    "href": "posts/seoul_bike_predictor/index.html#authors",
+    "title": "🚲 Seoul Bike Share Predictor",
+    "section": "👥 Authors",
+    "text": "👥 Authors\n\nElaine Chu\n\nLukman Lateef\n\nDhruv Garg\n\nEugene You\n\nShawn Xiao Hu"
+  },
+  {
+    "objectID": "posts/seoul_bike_predictor/index.html#references",
+    "href": "posts/seoul_bike_predictor/index.html#references",
+    "title": "🚲 Seoul Bike Share Predictor",
+    "section": "📚 References",
+    "text": "📚 References\n\nUCI Machine Learning Repository\nSathishkumar V E, Jangwoo Park, Yongyun Cho. Using data mining techniques for bike sharing demand prediction in Metropolitan city, Computer Communications (2020).\nSathishkumar V E, Yongyun Cho. A rule-based model for Seoul Bike sharing demand prediction using Weather data, European Journal of Remote Sensing (2020)."
   }
 ]
