@@ -3,7 +3,7 @@ title: "🔢 num_theory: Number Theory Utilities for Project Euler"
 description: "A fast and intuitive Python package for solving Project Euler problems through prime operations, arithmetic progressions, and more."
 date: 2025-01-30
 categories: [Python, Package, Project Euler, Number Theory]
-image: img/num_theory_banner.png  # Replace with your actual image or badge screenshot
+image: num_theory.png
 format:
   html:
     toc: true
