@@ -11,7 +11,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n🛒 RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚔 Vancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🔢 num_theory: Number Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA fast and intuitive Python package for solving Project Euler problems through prime operations, arithmetic progressions, and more.\n\n\n\n\n\nJan 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚲 Seoul Bike Share Predictor\n\n\n\n\n\n\nPython\n\n\nMachine Learning\n\n\nForecasting\n\n\nDocker\n\n\n\nPredicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n🛒 RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚔 Vancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🔢 Number Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA Python package developed to practice open-source publishing workflows, automation, and best practices for user-friendly libraries.\n\n\n\n\n\nFeb 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚲 Seoul Bike Share Predictor\n\n\n\n\n\n\nPython\n\n\nMachine Learning\n\n\nForecasting\n\n\nDocker\n\n\n\nPredicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows.\n\n\n\n\n\nDec 16, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/retail_pulse/index.html",
@@ -51,9 +51,9 @@
   {
     "objectID": "posts/num-theory/index.html#about-the-package",
     "href": "posts/num-theory/index.html#about-the-package",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
+    "title": "🔢 Number Theory Utilities for Project Euler",
     "section": "📦 About the Package",
-    "text": "📦 About the Package\nnum_theory is a high-performance Python package designed to streamline solving number theory problems — especially those found on Project Euler. It offers:\n\nFast prime number generation\nPrimality tests\nPrime factorization\nArithmetic progression tools\nIntuitive, simple API design"
+    "text": "📦 About the Package\nnum_theory is a high-performance Python package designed to simplify solving number theory problems — especially those from Project Euler.\nThe primary goal of this project was to gain practical experience in creating and publishing an open-source Python package by following industry best practices."
   },
   {
     "objectID": "posts/num-theory/index.html#installation",
@@ -208,5 +208,19 @@
     "title": "\nDhruv Garg\n",
     "section": "",
     "text": "Dhruv Garg\n\n\nData Scientist  |  MDS @ UBC\n\n\n3+ years of real-world impact with ML & data engineering\n\n\n\n\n\nExplore My Portfolio\n\n\n\n\n\n\nProjects\n\n\nWhere I turned theory into results.\n\nView Projects\n\n\n\n\n\nEducation\n\n\nDegrees and certifications that built my foundation.\n\nView Education\n\n\n\n\n\nExperience\n\n\nWhy you should hire me?\n\nView Experience\n\n\n\n\n\n LinkedIn  GitHub  Email"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#learn-more",
+    "href": "posts/num-theory/index.html#learn-more",
+    "title": "🔢 Number Theory Utilities for Project Euler",
+    "section": "📚 Learn More",
+    "text": "📚 Learn More\nYou can find more information about the project in the GitHub repository.\nPlease refer to the README file for detailed setup instructions, usage examples, and contribution guidelines."
+  },
+  {
+    "objectID": "posts/num-theory/index.html#project-features",
+    "href": "posts/num-theory/index.html#project-features",
+    "title": "🔢 Number Theory Utilities for Project Euler",
+    "section": "📈 Project Features",
+    "text": "📈 Project Features\nDuring the development of this package, we learned how to:\n\nManage dependencies using Poetry\nWrite and run unit tests\nSet up a CI/CD pipeline to automatically publish to PyPI\nIntegrate code coverage reporting with Codecov\nStructure projects using Cookiecutter templates\nHost project documentation on ReadTheDocs\n\nThe package includes functionalities such as:\n\nFast prime number generation\nPrimality testing\nPrime factorization\nArithmetic progression calculations\nA clean and intuitive API for easy use"
   }
 ]
