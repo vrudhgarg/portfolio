@@ -1,7 +1,7 @@
 ---
-title: "🛒 RetailPulse: Online Retail Analytics Dashboard"
+title: "RetailPulse: Online Retail Analytics Dashboard"
 description: "An interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas."
-date: 2025-03-15
+date: 2025-03-17
 categories: [Dash, Visualization, Retail, Python]
 image: image.png
 format:
@@ -12,28 +12,38 @@ format:
 
 ## 🎯 Motivation and Purpose
 
-Retail operations managers face challenges in managing inventory, tracking sales trends, and identifying market expansion opportunities. Making informed decisions swiftly is crucial to staying competitive.  
-**RetailPulse** was created to bridge this gap by providing an **interactive, data-driven dashboard 📊** that enables retailers to gain **real-time insights** into their business performance.
+This project was primarily focused on learning how to use **Dash** to build interactive dashboards.  
+We also explored how to integrate **Altair** visualizations within Dash applications.
+
+---
+
+### About the Data
+
+Retail operations managers often face challenges in managing inventory, tracking sales trends, and identifying market expansion opportunities.  
+Making informed, data-driven decisions quickly is crucial for maintaining a competitive edge.
+
+**RetailPulse** was developed to address this need by providing an **interactive dashboard** that gives retailers **real-time insights** into their business performance.
+
+---
 
 ## 📂 Data Attribution
 
-This project uses data from the [Online Retail Dataset](https://archive.ics.uci.edu/dataset/352/online+retail) available on **UC Irvine Machine Learning Repository**.
+This project uses data from the [Online Retail Dataset](https://archive.ics.uci.edu/dataset/352/online+retail), available through the **UC Irvine Machine Learning Repository**.
+
+---
 
 ## 🚀 Features
 
-- 📈 Monitor **sales trends** over time with interactive charts  
-- 🔄 Analyze **customer retention** and repeat purchasing behavior  
-- 🌍 Visualize **regional sales** with maps  
-- 📦 Evaluate **product performance** using bar charts and word clouds  
+- Monitor **sales trends** over time with interactive line charts  
+- Analyze **customer retention** and repeat purchasing behavior  
+- Explore **regional sales distribution** with geographic maps  
+- Evaluate **product performance** using bar charts and word clouds  
 
 ![RetailPulse Demo](../../images/m4.gif)
 
-## 🛠 Running the App Locally
+---
 
-```bash
-git clone https://github.com/UBC-MDS/DSCI-532_2025_15_RetailPulse.git
-cd DSCI-532_2025_15_RetailPulse
-conda env create -f environment.yaml
-conda activate retailpulse
-python src/app.py
-```
+## 📚 Learn More
+
+You can find more details about the project in the [GitHub repository](https://github.com/UBC-MDS/DSCI-532_2025_15_RetailPulse).  
+Please refer to the **README** file for setup instructions, usage examples, and additional project documentation.

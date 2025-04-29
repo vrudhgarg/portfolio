@@ -11,61 +11,61 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n🛒 RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚔 Vancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🔢 Number Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA Python package developed to practice open-source publishing workflows, automation, and best practices for user-friendly libraries.\n\n\n\n\n\nFeb 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🚲 Seoul Bike Share Predictor\n\n\n\n\n\n\nPython\n\n\nMachine Learning\n\n\nForecasting\n\n\nDocker\n\n\n\nPredicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows.\n\n\n\n\n\nDec 16, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nVancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNumber Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA Python package developed to practice open-source publishing workflows, automation, and best practices for user-friendly libraries.\n\n\n\n\n\nFeb 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSeoul Bike Share Predictor\n\n\n\n\n\n\nPython\n\n\nMachine Learning\n\n\nForecasting\n\n\nDocker\n\n\n\nPredicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows.\n\n\n\n\n\nDec 16, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/retail_pulse/index.html",
     "href": "posts/retail_pulse/index.html",
-    "title": "🛒 RetailPulse: Online Retail Analytics Dashboard",
+    "title": "RetailPulse: Online Retail Analytics Dashboard",
     "section": "",
-    "text": "Retail operations managers face challenges in managing inventory, tracking sales trends, and identifying market expansion opportunities. Making informed decisions swiftly is crucial to staying competitive.\nRetailPulse was created to bridge this gap by providing an interactive, data-driven dashboard 📊 that enables retailers to gain real-time insights into their business performance."
+    "text": "This project was primarily focused on learning how to use Dash to build interactive dashboards.\nWe also explored how to integrate Altair visualizations within Dash applications.\n\n\n\nRetail operations managers often face challenges in managing inventory, tracking sales trends, and identifying market expansion opportunities.\nMaking informed, data-driven decisions quickly is crucial for maintaining a competitive edge.\nRetailPulse was developed to address this need by providing an interactive dashboard that gives retailers real-time insights into their business performance."
   },
   {
     "objectID": "posts/retail_pulse/index.html#motivation-and-purpose",
     "href": "posts/retail_pulse/index.html#motivation-and-purpose",
-    "title": "🛒 RetailPulse: Online Retail Analytics Dashboard",
+    "title": "RetailPulse: Online Retail Analytics Dashboard",
     "section": "",
-    "text": "Retail operations managers face challenges in managing inventory, tracking sales trends, and identifying market expansion opportunities. Making informed decisions swiftly is crucial to staying competitive.\nRetailPulse was created to bridge this gap by providing an interactive, data-driven dashboard 📊 that enables retailers to gain real-time insights into their business performance."
+    "text": "This project was primarily focused on learning how to use Dash to build interactive dashboards.\nWe also explored how to integrate Altair visualizations within Dash applications.\n\n\n\nRetail operations managers often face challenges in managing inventory, tracking sales trends, and identifying market expansion opportunities.\nMaking informed, data-driven decisions quickly is crucial for maintaining a competitive edge.\nRetailPulse was developed to address this need by providing an interactive dashboard that gives retailers real-time insights into their business performance."
   },
   {
     "objectID": "posts/retail_pulse/index.html#data-attribution",
     "href": "posts/retail_pulse/index.html#data-attribution",
-    "title": "🛒 RetailPulse: Online Retail Analytics Dashboard",
+    "title": "RetailPulse: Online Retail Analytics Dashboard",
     "section": "📂 Data Attribution",
-    "text": "📂 Data Attribution\nThis project uses data from the Online Retail Dataset available on UC Irvine Machine Learning Repository."
+    "text": "📂 Data Attribution\nThis project uses data from the Online Retail Dataset, available through the UC Irvine Machine Learning Repository."
   },
   {
     "objectID": "posts/retail_pulse/index.html#features",
     "href": "posts/retail_pulse/index.html#features",
-    "title": "🛒 RetailPulse: Online Retail Analytics Dashboard",
+    "title": "RetailPulse: Online Retail Analytics Dashboard",
     "section": "🚀 Features",
-    "text": "🚀 Features\n\n📈 Monitor sales trends over time with interactive charts\n\n🔄 Analyze customer retention and repeat purchasing behavior\n\n🌍 Visualize regional sales with maps\n\n📦 Evaluate product performance using bar charts and word clouds\n\n\n\n\nRetailPulse Demo"
+    "text": "🚀 Features\n\nMonitor sales trends over time with interactive line charts\n\nAnalyze customer retention and repeat purchasing behavior\n\nExplore regional sales distribution with geographic maps\n\nEvaluate product performance using bar charts and word clouds\n\n\n\n\nRetailPulse Demo"
   },
   {
     "objectID": "posts/retail_pulse/index.html#running-the-app-locally",
     "href": "posts/retail_pulse/index.html#running-the-app-locally",
-    "title": "🛒 RetailPulse: Online Retail Analytics Dashboard",
+    "title": "RetailPulse: Online Retail Analytics Dashboard",
     "section": "🛠 Running the App Locally",
     "text": "🛠 Running the App Locally\ngit clone https://github.com/UBC-MDS/DSCI-532_2025_15_RetailPulse.git\ncd DSCI-532_2025_15_RetailPulse\nconda env create -f environment.yaml\nconda activate retailpulse\npython src/app.py"
   },
   {
     "objectID": "posts/num-theory/index.html#about-the-package",
     "href": "posts/num-theory/index.html#about-the-package",
-    "title": "🔢 Number Theory Utilities for Project Euler",
+    "title": "Number Theory Utilities for Project Euler",
     "section": "📦 About the Package",
     "text": "📦 About the Package\nnum_theory is a high-performance Python package designed to simplify solving number theory problems — especially those from Project Euler.\nThe primary goal of this project was to gain practical experience in creating and publishing an open-source Python package by following industry best practices."
   },
   {
     "objectID": "posts/num-theory/index.html#project-features",
     "href": "posts/num-theory/index.html#project-features",
-    "title": "🔢 Number Theory Utilities for Project Euler",
+    "title": "Number Theory Utilities for Project Euler",
     "section": "📈 Project Features",
     "text": "📈 Project Features\nDuring the development of this package, we learned how to:\n\nManage dependencies using Poetry\nWrite and run unit tests\nSet up a CI/CD pipeline to automatically publish to PyPI\nIntegrate code coverage reporting with Codecov\nStructure projects using Cookiecutter templates\nHost project documentation on ReadTheDocs\n\nThe package includes functionalities such as:\n\nFast prime number generation\nPrimality testing\nPrime factorization\nArithmetic progression calculations\nA clean and intuitive API for easy use"
   },
   {
     "objectID": "posts/num-theory/index.html#learn-more",
     "href": "posts/num-theory/index.html#learn-more",
-    "title": "🔢 Number Theory Utilities for Project Euler",
+    "title": "Number Theory Utilities for Project Euler",
     "section": "📚 Learn More",
     "text": "📚 Learn More\nYou can find more information about the project in the GitHub repository.\nPlease refer to the README file for detailed setup instructions, usage examples, and contribution guidelines."
   },
@@ -128,28 +128,28 @@
   {
     "objectID": "posts/seoul_bike_predictor/index.html",
     "href": "posts/seoul_bike_predictor/index.html",
-    "title": "🚲 Seoul Bike Share Predictor",
+    "title": "Seoul Bike Share Predictor",
     "section": "",
     "text": "In this project, we aimed to build a Docker image from scratch and create a fully reproducible analysis pipeline for future use.\nThe primary goal was to learn and practice key software engineering tools, including:\n\nSetting up Docker images\nImplementing a CI/CD pipeline\nManaging environments using Conda\nUsing make commands for workflow automation\nDocumenting the project using Quarto\n\nWe chose a simple dataset for this project, as the main focus was on understanding software tools rather than complex data modeling.\n\n\n\nRental bikes enhance urban mobility, but predicting their demand is crucial to maintaining a stable supply.\nThis project uses historical bike rental counts, weather information, and holiday data to forecast hourly bike demand in Seoul.\nThe dataset was sourced from the UCI Machine Learning Repository and described in studies by Sathishkumar V E, Jangwoo Park, and Yongyun Cho."
   },
   {
     "objectID": "posts/seoul_bike_predictor/index.html#about-the-project",
     "href": "posts/seoul_bike_predictor/index.html#about-the-project",
-    "title": "🚲 Seoul Bike Share Predictor",
+    "title": "Seoul Bike Share Predictor",
     "section": "",
     "text": "In this project, we aimed to build a Docker image from scratch and create a fully reproducible analysis pipeline for future use.\nThe primary goal was to learn and practice key software engineering tools, including:\n\nSetting up Docker images\nImplementing a CI/CD pipeline\nManaging environments using Conda\nUsing make commands for workflow automation\nDocumenting the project using Quarto\n\nWe chose a simple dataset for this project, as the main focus was on understanding software tools rather than complex data modeling.\n\n\n\nRental bikes enhance urban mobility, but predicting their demand is crucial to maintaining a stable supply.\nThis project uses historical bike rental counts, weather information, and holiday data to forecast hourly bike demand in Seoul.\nThe dataset was sourced from the UCI Machine Learning Repository and described in studies by Sathishkumar V E, Jangwoo Park, and Yongyun Cho."
   },
   {
     "objectID": "posts/seoul_bike_predictor/index.html#project-features",
     "href": "posts/seoul_bike_predictor/index.html#project-features",
-    "title": "🚲 Seoul Bike Share Predictor",
+    "title": "Seoul Bike Share Predictor",
     "section": "📈 Project Features",
     "text": "📈 Project Features\n\n🔍 Predicts hourly rental demand based on weather and calendar variables\n📦 Fully Dockerized environment for reproducible analysis\n🛠 Automated workflows using Makefile commands\n📊 Comprehensive EDA, model fitting, and evaluation\n📝 Detailed project documentation created using Quarto"
   },
   {
     "objectID": "posts/seoul_bike_predictor/index.html#learn-more",
     "href": "posts/seoul_bike_predictor/index.html#learn-more",
-    "title": "🚲 Seoul Bike Share Predictor",
+    "title": "Seoul Bike Share Predictor",
     "section": "📚 Learn More",
     "text": "📚 Learn More\nYou can find more information about the project in the GitHub repository.\nPlease refer to the README file in the repository for detailed setup instructions and project usage guidelines."
   },
@@ -159,5 +159,12 @@
     "title": "\nDhruv Garg\n",
     "section": "",
     "text": "Dhruv Garg\n\n\nData Scientist  |  MDS @ UBC\n\n\n3+ years of real-world impact with ML & data engineering\n\n\n\n\n\nExplore My Portfolio\n\n\n\n\n\n\nProjects\n\n\nWhere I turned theory into results.\n\nView Projects\n\n\n\n\n\nEducation\n\n\nDegrees and certifications that built my foundation.\n\nView Education\n\n\n\n\n\nExperience\n\n\nWhy you should hire me?\n\nView Experience\n\n\n\n\n\n LinkedIn  GitHub  Email"
+  },
+  {
+    "objectID": "posts/retail_pulse/index.html#learn-more",
+    "href": "posts/retail_pulse/index.html#learn-more",
+    "title": "RetailPulse: Online Retail Analytics Dashboard",
+    "section": "📚 Learn More",
+    "text": "📚 Learn More\nYou can find more details about the project in the GitHub repository.\nPlease refer to the README file for setup instructions, usage examples, and additional project documentation."
   }
 ]

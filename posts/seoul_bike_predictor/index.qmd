@@ -1,5 +1,5 @@
 ---
-title: "🚲 Seoul Bike Share Predictor"
+title: " Seoul Bike Share Predictor"
 description: "Predicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows."
 date: 2024-12-16
 categories: [Python, Machine Learning, Forecasting, Docker]

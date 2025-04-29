@@ -1,5 +1,5 @@
 ---
-title: "🔢 Number Theory Utilities for Project Euler"
+title: " Number Theory Utilities for Project Euler"
 description: "A Python package developed to practice open-source publishing workflows, automation, and best practices for user-friendly libraries."
 date: 2025-02-03
 categories: [Python, Package, Project Euler, Number Theory]

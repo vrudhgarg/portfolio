@@ -1,5 +1,5 @@
 ---
-title: "🚔 Vancouver Crime Statistics Dashboard"
+title: " Vancouver Crime Statistics Dashboard"
 description: "An interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters."
 date: 2025-02-28
 categories: [R, Shiny, Data Visualization, Crime]
