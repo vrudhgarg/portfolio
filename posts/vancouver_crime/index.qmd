@@ -1,5 +1,5 @@
 ---
-title: " Vancouver Crime Statistics Dashboard"
+title: "Vancouver Crime Statistics Dashboard"
 description: "An interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters."
 date: 2025-02-28
 categories: [R, Shiny, Data Visualization, Crime]
@@ -12,83 +12,44 @@ format:
 
 ## 🎯 Motivation
 
-Crime statistics provide valuable insights into public safety and law enforcement effectiveness. This dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.
+For this project, I wanted to build a Shiny application from scratch.  
+I downloaded PDF reports from the Vancouver Police Department (VPD) portal and used a PDF extraction library to retrieve the crime data.  
+The extracted data was then processed and used to create this interactive dashboard.
+
+This project helped me learn the basics of Shiny app development and gave me hands-on experience working with real-world data sources.
+
+---
+
+### About the Dashboard
+
+Crime statistics provide valuable insights into public safety and law enforcement effectiveness.  
+This dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.
 
 Using the dashboard, users can:
 
-- 📈 Track crime trends over time  
-- 🏘️ Compare crime types across neighborhoods  
-- 📆 Analyze monthly crime patterns  
-- 🔍 Filter data by date, location, and type  
+- Track crime trends over time  
+- Compare crime types across neighborhoods  
+- Analyze monthly crime patterns  
+- Filter and explore data by date, location, and type  
 
 ---
 
 ## 🖥️ App Overview
 
-Built with **Shiny in R**, this dashboard provides an interactive interface for visualizing Vancouver crime data.
+Built with **Shiny in R**, this dashboard offers an interactive platform for exploring Vancouver crime data.
 
-### Features
+### Key Features
 
-1. 🗺️ **Neighborhood Selection** – choose one or more
-2. 🔍 **Crime Type Filtering** – drill down to specific crimes
-3. 📅 **Date Range Selection** – select time windows
-4. 📊 **Dynamic Plot Selection** – line/bar charts toggle
-5. 🔥 **Heatmap** – monthly crime distribution
-6. 📋 **Interactive Data Table** – full searchable table
-
----
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone git@github.ubc.ca:mds-2024-25/DSCI_532_individual-assignment_dgarg001.git
-cd DSCI_532_individual-assignment_dgarg001
-```
-
-### 2️⃣ Set Up R Environment
-
-```r
-install.packages("renv")
-renv::restore()
-```
-
-This will install all dependencies using `renv.lock`.
-
-### 3️⃣ Run the App
-
-**Option A** – Inside R:
-
-```r
-shiny::runApp('src')
-```
-
-**Option B** – From terminal:
-
-```bash
-cd src
-Rscript -e "shiny::runApp()"
-```
+1. **Neighborhood Selection** – choose one or multiple neighborhoods  
+2. **Crime Type Filtering** – focus on specific crime categories  
+3. **Date Range Selection** – filter data by time period  
+4. **Dynamic Plot Selection** – switch between line and bar charts  
+5. **Heatmap Visualization** – view monthly crime distributions  
+6. **Interactive Data Table** – browse and search detailed records  
 
 ---
 
-## 🎥 Demo
+## 📚 Learn More
 
-A walkthrough of the dashboard is available here:  
-📽️ [`demo.mp4`](../images/demo.mp4)
-
----
-
-## 🧾 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 🙏 Acknowledgments
-
-- 📊 Data Source: [Vancouver Police Department](https://vpd.ca/crime-statistics/)  
-- 🎓 UBC MDS Program for project structure & support
-```
-
+You can find more details about the project in the [GitHub repository](https://github.com/vrudhgarg/vancouver_crime_statistics).  
+Please refer to the **README** file for setup instructions, usage examples, and additional project documentation.

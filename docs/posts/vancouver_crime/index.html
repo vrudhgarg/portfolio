@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2025-02-28">
 <meta name="description" content="An interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.">
 
-<title>🚔 Vancouver Crime Statistics Dashboard – Dhruv Garg</title>
+<title>Vancouver Crime Statistics Dashboard – Dhruv Garg</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -165,7 +131,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">🚔 Vancouver Crime Statistics Dashboard</h1>
+      <h1 class="title">Vancouver Crime Statistics Dashboard</h1>
                   <div>
         <div class="description">
           An interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.
@@ -203,20 +169,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">🎯 Motivation</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">🎯 Motivation</a>
+  <ul class="collapse">
+  <li><a href="#about-the-dashboard" id="toc-about-the-dashboard" class="nav-link" data-scroll-target="#about-the-dashboard">About the Dashboard</a></li>
+  </ul></li>
   <li><a href="#app-overview" id="toc-app-overview" class="nav-link" data-scroll-target="#app-overview">🖥️ App Overview</a>
   <ul class="collapse">
-  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
   </ul></li>
-  <li><a href="#installation-setup" id="toc-installation-setup" class="nav-link" data-scroll-target="#installation-setup">⚙️ Installation &amp; Setup</a>
-  <ul class="collapse">
-  <li><a href="#clone-the-repository" id="toc-clone-the-repository" class="nav-link" data-scroll-target="#clone-the-repository">1️⃣ Clone the Repository</a></li>
-  <li><a href="#set-up-r-environment" id="toc-set-up-r-environment" class="nav-link" data-scroll-target="#set-up-r-environment">2️⃣ Set Up R Environment</a></li>
-  <li><a href="#run-the-app" id="toc-run-the-app" class="nav-link" data-scroll-target="#run-the-app">3️⃣ Run the App</a></li>
-  </ul></li>
-  <li><a href="#demo" id="toc-demo" class="nav-link" data-scroll-target="#demo">🎥 Demo</a></li>
-  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">🧾 License</a></li>
-  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">🙏 Acknowledgments</a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">📚 Learn More</a></li>
   </ul>
 </nav>
     </div>
@@ -229,76 +190,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="motivation" class="level2">
 <h2 class="anchored" data-anchor-id="motivation">🎯 Motivation</h2>
-<p>Crime statistics provide valuable insights into public safety and law enforcement effectiveness. This dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.</p>
+<p>For this project, I wanted to build a Shiny application from scratch.<br>
+I downloaded PDF reports from the Vancouver Police Department (VPD) portal and used a PDF extraction library to retrieve the crime data.<br>
+The extracted data was then processed and used to create this interactive dashboard.</p>
+<p>This project helped me learn the basics of Shiny app development and gave me hands-on experience working with real-world data sources.</p>
+<hr>
+<section id="about-the-dashboard" class="level3">
+<h3 class="anchored" data-anchor-id="about-the-dashboard">About the Dashboard</h3>
+<p>Crime statistics provide valuable insights into public safety and law enforcement effectiveness.<br>
+This dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.</p>
 <p>Using the dashboard, users can:</p>
 <ul>
-<li>📈 Track crime trends over time<br>
+<li>Track crime trends over time<br>
 </li>
-<li>🏘️ Compare crime types across neighborhoods<br>
+<li>Compare crime types across neighborhoods<br>
 </li>
-<li>📆 Analyze monthly crime patterns<br>
+<li>Analyze monthly crime patterns<br>
 </li>
-<li>🔍 Filter data by date, location, and type</li>
+<li>Filter and explore data by date, location, and type</li>
 </ul>
 <hr>
 </section>
+</section>
 <section id="app-overview" class="level2">
 <h2 class="anchored" data-anchor-id="app-overview">🖥️ App Overview</h2>
-<p>Built with <strong>Shiny in R</strong>, this dashboard provides an interactive interface for visualizing Vancouver crime data.</p>
-<section id="features" class="level3">
-<h3 class="anchored" data-anchor-id="features">Features</h3>
+<p>Built with <strong>Shiny in R</strong>, this dashboard offers an interactive platform for exploring Vancouver crime data.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
 <ol type="1">
-<li>🗺️ <strong>Neighborhood Selection</strong> – choose one or more</li>
-<li>🔍 <strong>Crime Type Filtering</strong> – drill down to specific crimes</li>
-<li>📅 <strong>Date Range Selection</strong> – select time windows</li>
-<li>📊 <strong>Dynamic Plot Selection</strong> – line/bar charts toggle</li>
-<li>🔥 <strong>Heatmap</strong> – monthly crime distribution</li>
-<li>📋 <strong>Interactive Data Table</strong> – full searchable table</li>
+<li><strong>Neighborhood Selection</strong> – choose one or multiple neighborhoods<br>
+</li>
+<li><strong>Crime Type Filtering</strong> – focus on specific crime categories<br>
+</li>
+<li><strong>Date Range Selection</strong> – filter data by time period<br>
+</li>
+<li><strong>Dynamic Plot Selection</strong> – switch between line and bar charts<br>
+</li>
+<li><strong>Heatmap Visualization</strong> – view monthly crime distributions<br>
+</li>
+<li><strong>Interactive Data Table</strong> – browse and search detailed records</li>
 </ol>
 <hr>
 </section>
 </section>
-<section id="installation-setup" class="level2">
-<h2 class="anchored" data-anchor-id="installation-setup">⚙️ Installation &amp; Setup</h2>
-<section id="clone-the-repository" class="level3">
-<h3 class="anchored" data-anchor-id="clone-the-repository">1️⃣ Clone the Repository</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.ubc.ca:mds-2024-25/DSCI_532_individual-assignment_dgarg001.git</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> DSCI_532_individual-assignment_dgarg001</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="set-up-r-environment" class="level3">
-<h3 class="anchored" data-anchor-id="set-up-r-environment">2️⃣ Set Up R Environment</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">restore</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This will install all dependencies using <code>renv.lock</code>.</p>
-</section>
-<section id="run-the-app" class="level3">
-<h3 class="anchored" data-anchor-id="run-the-app">3️⃣ Run the App</h3>
-<p><strong>Option A</strong> – Inside R:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">runApp</span>(<span class="st">'src'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Option B</strong> – From terminal:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> src</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> <span class="at">-e</span> <span class="st">"shiny::runApp()"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-</section>
-<section id="demo" class="level2">
-<h2 class="anchored" data-anchor-id="demo">🎥 Demo</h2>
-<p>A walkthrough of the dashboard is available here:<br>
-📽️ <a href="../images/demo.mp4"><code>demo.mp4</code></a></p>
-<hr>
-</section>
-<section id="license" class="level2">
-<h2 class="anchored" data-anchor-id="license">🧾 License</h2>
-<p>This project is licensed under the <strong>MIT License</strong>.</p>
-<hr>
-</section>
-<section id="acknowledgments" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgments">🙏 Acknowledgments</h2>
-<ul>
-<li>📊 Data Source: <a href="https://vpd.ca/crime-statistics/">Vancouver Police Department</a><br>
-</li>
-<li>🎓 UBC MDS Program for project structure &amp; support ```</li>
-</ul>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">📚 Learn More</h2>
+<p>You can find more details about the project in the <a href="https://github.com/vrudhgarg/vancouver_crime_statistics">GitHub repository</a>.<br>
+Please refer to the <strong>README</strong> file for setup instructions, usage examples, and additional project documentation.</p>
 
 
 </section>

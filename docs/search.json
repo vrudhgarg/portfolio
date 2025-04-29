@@ -72,49 +72,49 @@
   {
     "objectID": "posts/vancouver_crime/index.html",
     "href": "posts/vancouver_crime/index.html",
-    "title": "🚔 Vancouver Crime Statistics Dashboard",
+    "title": "Vancouver Crime Statistics Dashboard",
     "section": "",
-    "text": "Crime statistics provide valuable insights into public safety and law enforcement effectiveness. This dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.\nUsing the dashboard, users can:\n\n📈 Track crime trends over time\n\n🏘️ Compare crime types across neighborhoods\n\n📆 Analyze monthly crime patterns\n\n🔍 Filter data by date, location, and type"
+    "text": "For this project, I wanted to build a Shiny application from scratch.\nI downloaded PDF reports from the Vancouver Police Department (VPD) portal and used a PDF extraction library to retrieve the crime data.\nThe extracted data was then processed and used to create this interactive dashboard.\nThis project helped me learn the basics of Shiny app development and gave me hands-on experience working with real-world data sources.\n\n\n\nCrime statistics provide valuable insights into public safety and law enforcement effectiveness.\nThis dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.\nUsing the dashboard, users can:\n\nTrack crime trends over time\n\nCompare crime types across neighborhoods\n\nAnalyze monthly crime patterns\n\nFilter and explore data by date, location, and type"
   },
   {
     "objectID": "posts/vancouver_crime/index.html#motivation",
     "href": "posts/vancouver_crime/index.html#motivation",
-    "title": "🚔 Vancouver Crime Statistics Dashboard",
+    "title": "Vancouver Crime Statistics Dashboard",
     "section": "",
-    "text": "Crime statistics provide valuable insights into public safety and law enforcement effectiveness. This dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.\nUsing the dashboard, users can:\n\n📈 Track crime trends over time\n\n🏘️ Compare crime types across neighborhoods\n\n📆 Analyze monthly crime patterns\n\n🔍 Filter data by date, location, and type"
+    "text": "For this project, I wanted to build a Shiny application from scratch.\nI downloaded PDF reports from the Vancouver Police Department (VPD) portal and used a PDF extraction library to retrieve the crime data.\nThe extracted data was then processed and used to create this interactive dashboard.\nThis project helped me learn the basics of Shiny app development and gave me hands-on experience working with real-world data sources.\n\n\n\nCrime statistics provide valuable insights into public safety and law enforcement effectiveness.\nThis dashboard is designed for policymakers, researchers, and local authorities to analyze crime trends across Vancouver neighborhoods.\nUsing the dashboard, users can:\n\nTrack crime trends over time\n\nCompare crime types across neighborhoods\n\nAnalyze monthly crime patterns\n\nFilter and explore data by date, location, and type"
   },
   {
     "objectID": "posts/vancouver_crime/index.html#app-overview",
     "href": "posts/vancouver_crime/index.html#app-overview",
-    "title": "🚔 Vancouver Crime Statistics Dashboard",
+    "title": "Vancouver Crime Statistics Dashboard",
     "section": "🖥️ App Overview",
-    "text": "🖥️ App Overview\nBuilt with Shiny in R, this dashboard provides an interactive interface for visualizing Vancouver crime data.\n\nFeatures\n\n🗺️ Neighborhood Selection – choose one or more\n🔍 Crime Type Filtering – drill down to specific crimes\n📅 Date Range Selection – select time windows\n📊 Dynamic Plot Selection – line/bar charts toggle\n🔥 Heatmap – monthly crime distribution\n📋 Interactive Data Table – full searchable table"
+    "text": "🖥️ App Overview\nBuilt with Shiny in R, this dashboard offers an interactive platform for exploring Vancouver crime data.\n\nKey Features\n\nNeighborhood Selection – choose one or multiple neighborhoods\n\nCrime Type Filtering – focus on specific crime categories\n\nDate Range Selection – filter data by time period\n\nDynamic Plot Selection – switch between line and bar charts\n\nHeatmap Visualization – view monthly crime distributions\n\nInteractive Data Table – browse and search detailed records"
   },
   {
     "objectID": "posts/vancouver_crime/index.html#installation-setup",
     "href": "posts/vancouver_crime/index.html#installation-setup",
-    "title": "🚔 Vancouver Crime Statistics Dashboard",
+    "title": "Vancouver Crime Statistics Dashboard",
     "section": "⚙️ Installation & Setup",
     "text": "⚙️ Installation & Setup\n\n1️⃣ Clone the Repository\ngit clone git@github.ubc.ca:mds-2024-25/DSCI_532_individual-assignment_dgarg001.git\ncd DSCI_532_individual-assignment_dgarg001\n\n\n2️⃣ Set Up R Environment\ninstall.packages(\"renv\")\nrenv::restore()\nThis will install all dependencies using renv.lock.\n\n\n3️⃣ Run the App\nOption A – Inside R:\nshiny::runApp('src')\nOption B – From terminal:\ncd src\nRscript -e \"shiny::runApp()\""
   },
   {
     "objectID": "posts/vancouver_crime/index.html#demo",
     "href": "posts/vancouver_crime/index.html#demo",
-    "title": "🚔 Vancouver Crime Statistics Dashboard",
+    "title": "Vancouver Crime Statistics Dashboard",
     "section": "🎥 Demo",
     "text": "🎥 Demo\nA walkthrough of the dashboard is available here:\n📽️ demo.mp4"
   },
   {
     "objectID": "posts/vancouver_crime/index.html#license",
     "href": "posts/vancouver_crime/index.html#license",
-    "title": "🚔 Vancouver Crime Statistics Dashboard",
+    "title": "Vancouver Crime Statistics Dashboard",
     "section": "🧾 License",
     "text": "🧾 License\nThis project is licensed under the MIT License."
   },
   {
     "objectID": "posts/vancouver_crime/index.html#acknowledgments",
     "href": "posts/vancouver_crime/index.html#acknowledgments",
-    "title": "🚔 Vancouver Crime Statistics Dashboard",
+    "title": "Vancouver Crime Statistics Dashboard",
     "section": "🙏 Acknowledgments",
     "text": "🙏 Acknowledgments\n\n📊 Data Source: Vancouver Police Department\n\n🎓 UBC MDS Program for project structure & support ```"
   },
@@ -164,6 +164,13 @@
     "objectID": "posts/retail_pulse/index.html#learn-more",
     "href": "posts/retail_pulse/index.html#learn-more",
     "title": "RetailPulse: Online Retail Analytics Dashboard",
+    "section": "📚 Learn More",
+    "text": "📚 Learn More\nYou can find more details about the project in the GitHub repository.\nPlease refer to the README file for setup instructions, usage examples, and additional project documentation."
+  },
+  {
+    "objectID": "posts/vancouver_crime/index.html#learn-more",
+    "href": "posts/vancouver_crime/index.html#learn-more",
+    "title": "Vancouver Crime Statistics Dashboard",
     "section": "📚 Learn More",
     "text": "📚 Learn More\nYou can find more details about the project in the GitHub repository.\nPlease refer to the README file for setup instructions, usage examples, and additional project documentation."
   }
