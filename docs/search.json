@@ -56,67 +56,18 @@
     "text": "📦 About the Package\nnum_theory is a high-performance Python package designed to simplify solving number theory problems — especially those from Project Euler.\nThe primary goal of this project was to gain practical experience in creating and publishing an open-source Python package by following industry best practices."
   },
   {
-    "objectID": "posts/num-theory/index.html#installation",
-    "href": "posts/num-theory/index.html#installation",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "🧪 Installation",
-    "text": "🧪 Installation\npip install num_theory_euler_problems"
+    "objectID": "posts/num-theory/index.html#project-features",
+    "href": "posts/num-theory/index.html#project-features",
+    "title": "🔢 Number Theory Utilities for Project Euler",
+    "section": "📈 Project Features",
+    "text": "📈 Project Features\nDuring the development of this package, we learned how to:\n\nManage dependencies using Poetry\nWrite and run unit tests\nSet up a CI/CD pipeline to automatically publish to PyPI\nIntegrate code coverage reporting with Codecov\nStructure projects using Cookiecutter templates\nHost project documentation on ReadTheDocs\n\nThe package includes functionalities such as:\n\nFast prime number generation\nPrimality testing\nPrime factorization\nArithmetic progression calculations\nA clean and intuitive API for easy use"
   },
   {
-    "objectID": "posts/num-theory/index.html#core-features",
-    "href": "posts/num-theory/index.html#core-features",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "🔧 Core Features",
-    "text": "🔧 Core Features\n\n🧮 get_primes(n) — Generate all primes less than n\n🔍 is_prime(n) — Efficient primality testing\n🧠 prime_factorization(n) — Return prime factors with powers\n➕ arithmetic_progression(a, d, n) — Compute terms, sum, or nth term in AP"
-  },
-  {
-    "objectID": "posts/num-theory/index.html#usage-examples",
-    "href": "posts/num-theory/index.html#usage-examples",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "🧑‍💻 Usage Examples",
-    "text": "🧑‍💻 Usage Examples\nfrom num_theory import get_primes, is_prime, prime_factorization\n\nget_primes(10)           # [2, 3, 5, 7]\nis_prime(17)             # True\nprime_factorization(84)  # [(2, 2), (3, 1), (7, 1)]\n\nReal-Life Example: Monthly Savings\nfrom num_theory import arithmetic_progression\n\n# Save $50, increasing by $20 each month\narithmetic_progression(a=50, d=20, n=6)               # [50, 70, 90, 110, 130, 150]\narithmetic_progression(a=50, d=20, n=6, compute_sum=True)  # 600.0\narithmetic_progression(a=50, d=20, n=6, nth_term=True)     # 150"
-  },
-  {
-    "objectID": "posts/num-theory/index.html#euler-problem-examples",
-    "href": "posts/num-theory/index.html#euler-problem-examples",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "🧠 Euler Problem Examples",
-    "text": "🧠 Euler Problem Examples\n\nProblem 3: Largest Prime Factor\nfrom num_theory import prime_factorization\n\nfactors = prime_factorization(600851475143)\nlargest_prime = factors[-1][0]\nprint(largest_prime)  # Output: 6857\n\n\nProblem 10: Sum of Primes Below Two Million\nfrom num_theory import get_primes\n\nprimes = get_primes(2_000_000)\nprint(sum(primes))  # Output: 142913828922"
-  },
-  {
-    "objectID": "posts/num-theory/index.html#why-use-num_theory",
-    "href": "posts/num-theory/index.html#why-use-num_theory",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "🥇 Why Use num_theory?",
-    "text": "🥇 Why Use num_theory?\n\n⚡ Optimized for large computations\n🧩 Consolidated utility functions\n🧪 Speed + Simplicity\n📚 Project Euler–focused"
-  },
-  {
-    "objectID": "posts/num-theory/index.html#contributing",
-    "href": "posts/num-theory/index.html#contributing",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "🤝 Contributing",
-    "text": "🤝 Contributing\nWe welcome contributions! Please see the contributing guidelines and code of conduct."
-  },
-  {
-    "objectID": "posts/num-theory/index.html#authors",
-    "href": "posts/num-theory/index.html#authors",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "👥 Authors",
-    "text": "👥 Authors\n\nDhruv Garg\n\nDominic Lam\n\nThamer Aldawood\n\nTingting Chen"
-  },
-  {
-    "objectID": "posts/num-theory/index.html#license",
-    "href": "posts/num-theory/index.html#license",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "📄 License",
-    "text": "📄 License\nLicensed under the MIT License"
-  },
-  {
-    "objectID": "posts/num-theory/index.html#built-with",
-    "href": "posts/num-theory/index.html#built-with",
-    "title": "🔢 num_theory: Number Theory Utilities for Project Euler",
-    "section": "🧱 Built With",
-    "text": "🧱 Built With\n\ncookiecutter + py-pkgs-cookiecutter ```"
+    "objectID": "posts/num-theory/index.html#learn-more",
+    "href": "posts/num-theory/index.html#learn-more",
+    "title": "🔢 Number Theory Utilities for Project Euler",
+    "section": "📚 Learn More",
+    "text": "📚 Learn More\nYou can find more information about the project in the GitHub repository.\nPlease refer to the README file for detailed setup instructions, usage examples, and contribution guidelines."
   },
   {
     "objectID": "posts/vancouver_crime/index.html",
@@ -208,19 +159,5 @@
     "title": "\nDhruv Garg\n",
     "section": "",
     "text": "Dhruv Garg\n\n\nData Scientist  |  MDS @ UBC\n\n\n3+ years of real-world impact with ML & data engineering\n\n\n\n\n\nExplore My Portfolio\n\n\n\n\n\n\nProjects\n\n\nWhere I turned theory into results.\n\nView Projects\n\n\n\n\n\nEducation\n\n\nDegrees and certifications that built my foundation.\n\nView Education\n\n\n\n\n\nExperience\n\n\nWhy you should hire me?\n\nView Experience\n\n\n\n\n\n LinkedIn  GitHub  Email"
-  },
-  {
-    "objectID": "posts/num-theory/index.html#learn-more",
-    "href": "posts/num-theory/index.html#learn-more",
-    "title": "🔢 Number Theory Utilities for Project Euler",
-    "section": "📚 Learn More",
-    "text": "📚 Learn More\nYou can find more information about the project in the GitHub repository.\nPlease refer to the README file for detailed setup instructions, usage examples, and contribution guidelines."
-  },
-  {
-    "objectID": "posts/num-theory/index.html#project-features",
-    "href": "posts/num-theory/index.html#project-features",
-    "title": "🔢 Number Theory Utilities for Project Euler",
-    "section": "📈 Project Features",
-    "text": "📈 Project Features\nDuring the development of this package, we learned how to:\n\nManage dependencies using Poetry\nWrite and run unit tests\nSet up a CI/CD pipeline to automatically publish to PyPI\nIntegrate code coverage reporting with Codecov\nStructure projects using Cookiecutter templates\nHost project documentation on ReadTheDocs\n\nThe package includes functionalities such as:\n\nFast prime number generation\nPrimality testing\nPrime factorization\nArithmetic progression calculations\nA clean and intuitive API for easy use"
   }
 ]
