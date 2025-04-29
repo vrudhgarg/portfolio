@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -203,19 +169,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about-the-project" id="toc-about-the-project" class="nav-link active" data-scroll-target="#about-the-project">🎯 About the Project</a></li>
-  <li><a href="#project-features" id="toc-project-features" class="nav-link" data-scroll-target="#project-features">📈 Project Features</a></li>
-  <li><a href="#setup-instructions" id="toc-setup-instructions" class="nav-link" data-scroll-target="#setup-instructions">🖥️ Setup Instructions</a>
+  <li><a href="#about-the-project" id="toc-about-the-project" class="nav-link active" data-scroll-target="#about-the-project">🎯 About the Project</a>
   <ul class="collapse">
-  <li><a href="#pre-requisites" id="toc-pre-requisites" class="nav-link" data-scroll-target="#pre-requisites">1️⃣ Pre-requisites</a></li>
-  <li><a href="#run-the-analysis" id="toc-run-the-analysis" class="nav-link" data-scroll-target="#run-the-analysis">2️⃣ Run the Analysis</a></li>
-  <li><a href="#reset-or-rerun-the-workflow" id="toc-reset-or-rerun-the-workflow" class="nav-link" data-scroll-target="#reset-or-rerun-the-workflow">3️⃣ Reset or Rerun the Workflow</a></li>
-  <li><a href="#cleaning-commands" id="toc-cleaning-commands" class="nav-link" data-scroll-target="#cleaning-commands">🧹 Cleaning Commands</a></li>
+  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data">📂 About the Data</a></li>
   </ul></li>
-  <li><a href="#adding-a-new-dependency" id="toc-adding-a-new-dependency" class="nav-link" data-scroll-target="#adding-a-new-dependency">📦 Adding a New Dependency</a></li>
-  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">📝 License</a></li>
-  <li><a href="#authors" id="toc-authors" class="nav-link" data-scroll-target="#authors">👥 Authors</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">📚 References</a></li>
+  <li><a href="#project-features" id="toc-project-features" class="nav-link" data-scroll-target="#project-features">📈 Project Features</a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">📚 Learn More</a></li>
   </ul>
 </nav>
     </div>
@@ -228,108 +187,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="about-the-project" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-project">🎯 About the Project</h2>
-<p>Rental bikes improve urban mobility, but predicting demand is critical for maintaining a <strong>stable supply</strong>. This project uses historical bike rental, weather, and holiday data to forecast hourly bike demand in Seoul.</p>
+<p>In this project, we aimed to build a Docker image from scratch and create a fully reproducible analysis pipeline for future use.<br>
+The primary goal was to learn and practice key software engineering tools, including:</p>
+<ul>
+<li>Setting up Docker images</li>
+<li>Implementing a CI/CD pipeline</li>
+<li>Managing environments using Conda</li>
+<li>Using <code>make</code> commands for workflow automation</li>
+<li>Documenting the project using Quarto</li>
+</ul>
+<p>We chose a simple dataset for this project, as the main focus was on understanding software tools rather than complex data modeling.</p>
+<hr>
+<section id="about-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="about-the-data">📂 About the Data</h3>
+<p>Rental bikes enhance urban mobility, but predicting their demand is crucial to maintaining a <strong>stable supply</strong>.<br>
+This project uses historical bike rental counts, weather information, and holiday data to forecast hourly bike demand in Seoul.</p>
 <p>The dataset was sourced from the <a href="https://archive.ics.uci.edu/">UCI Machine Learning Repository</a> and described in studies by Sathishkumar V E, Jangwoo Park, and Yongyun Cho.</p>
 <hr>
+</section>
 </section>
 <section id="project-features" class="level2">
 <h2 class="anchored" data-anchor-id="project-features">📈 Project Features</h2>
 <ul>
 <li>🔍 Predicts <strong>hourly rental demand</strong> based on weather and calendar variables</li>
-<li>📦 Fully <strong>Dockerized</strong> environment setup for easy reproducibility</li>
-<li>🛠 Automated workflows with <strong>Makefile</strong> commands</li>
-<li>📊 Exploratory Data Analysis (EDA), model fitting, evaluation</li>
-<li>📝 Comprehensive reporting and model interpretation</li>
+<li>📦 Fully <strong>Dockerized</strong> environment for reproducible analysis</li>
+<li>🛠 Automated workflows using <strong>Makefile</strong> commands</li>
+<li>📊 Comprehensive <strong>EDA, model fitting, and evaluation</strong></li>
+<li>📝 Detailed project documentation created using <strong>Quarto</strong></li>
 </ul>
 <hr>
 </section>
-<section id="setup-instructions" class="level2">
-<h2 class="anchored" data-anchor-id="setup-instructions">🖥️ Setup Instructions</h2>
-<section id="pre-requisites" class="level3">
-<h3 class="anchored" data-anchor-id="pre-requisites">1️⃣ Pre-requisites</h3>
-<ul>
-<li>Docker (latest version)</li>
-<li>Docker Compose</li>
-<li>Conda and Conda-Lock</li>
-</ul>
-</section>
-<section id="run-the-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="run-the-analysis">2️⃣ Run the Analysis</h3>
-<p><strong>Start Docker Compose</strong>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Open the link provided (<code>http://127.0.0.1:8888/lab?token=...</code>) in your browser to launch JupyterLab.</p>
-<hr>
-</section>
-<section id="reset-or-rerun-the-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="reset-or-rerun-the-workflow">3️⃣ Reset or Rerun the Workflow</h3>
-<p><strong>Clean previously generated outputs:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Run the full analysis pipeline:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> all</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Run individual steps:</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> dats</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> preprocess</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> eda</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> fit</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> evaluate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-<section id="cleaning-commands" class="level3">
-<h3 class="anchored" data-anchor-id="cleaning-commands">🧹 Cleaning Commands</h3>
-<p>You can clean specific artifacts with:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean-dats</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean-figs</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean-tables</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean-models</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean-reports</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-</section>
-<section id="adding-a-new-dependency" class="level2">
-<h2 class="anchored" data-anchor-id="adding-a-new-dependency">📦 Adding a New Dependency</h2>
-<ol type="1">
-<li>Add the dependency to <code>environment.yml</code></li>
-<li>Update lock file:</li>
-</ol>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda-lock</span> <span class="at">-k</span> explicit <span class="at">--file</span> environments/environment.yml <span class="at">-p</span> linux-64</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="3" type="1">
-<li>Rebuild Docker image</li>
-<li>Update <code>docker-compose.yml</code> to use the new image tag</li>
-<li>Push and submit a Pull Request</li>
-</ol>
-<hr>
-</section>
-<section id="license" class="level2">
-<h2 class="anchored" data-anchor-id="license">📝 License</h2>
-<ul>
-<li>Software code: <a href="https://opensource.org/licenses/MIT">MIT License</a></li>
-<li>Report: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 License</a></li>
-</ul>
-<hr>
-</section>
-<section id="authors" class="level2">
-<h2 class="anchored" data-anchor-id="authors">👥 Authors</h2>
-<ul>
-<li>Elaine Chu<br>
-</li>
-<li>Lukman Lateef<br>
-</li>
-<li>Dhruv Garg<br>
-</li>
-<li>Eugene You<br>
-</li>
-<li>Shawn Xiao Hu</li>
-</ul>
-<hr>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">📚 References</h2>
-<ul>
-<li><a href="https://archive.ics.uci.edu/">UCI Machine Learning Repository</a></li>
-<li>Sathishkumar V E, Jangwoo Park, Yongyun Cho. <em>Using data mining techniques for bike sharing demand prediction in Metropolitan city</em>, Computer Communications (2020).</li>
-<li>Sathishkumar V E, Yongyun Cho. <em>A rule-based model for Seoul Bike sharing demand prediction using Weather data</em>, European Journal of Remote Sensing (2020).</li>
-</ul>
-<hr>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">📚 Learn More</h2>
+<p>You can find more information about the project in the <a href="https://github.com/UBC-MDS/DSCI522-2425-28-rental-bike-prediction">GitHub repository</a>.<br>
+Please refer to the <strong>README</strong> file in the repository for detailed setup instructions and project usage guidelines.</p>
 
 
 </section>

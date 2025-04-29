@@ -3,7 +3,7 @@ title: "🚲 Seoul Bike Share Predictor"
 description: "Predicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows."
 date: 2025-01-15
 categories: [Python, Machine Learning, Forecasting, Docker]
-image: docker_project.png  
+image: docker_project.png
 format:
   html:
     toc: true
@@ -12,7 +12,23 @@ format:
 
 ## 🎯 About the Project
 
-Rental bikes improve urban mobility, but predicting demand is critical for maintaining a **stable supply**. This project uses historical bike rental, weather, and holiday data to forecast hourly bike demand in Seoul.
+In this project, we aimed to build a Docker image from scratch and create a fully reproducible analysis pipeline for future use.  
+The primary goal was to learn and practice key software engineering tools, including:
+
+- Setting up Docker images
+- Implementing a CI/CD pipeline
+- Managing environments using Conda
+- Using `make` commands for workflow automation
+- Documenting the project using Quarto
+
+We chose a simple dataset for this project, as the main focus was on understanding software tools rather than complex data modeling.
+
+---
+
+### 📂 About the Data
+
+Rental bikes enhance urban mobility, but predicting their demand is crucial to maintaining a **stable supply**.  
+This project uses historical bike rental counts, weather information, and holiday data to forecast hourly bike demand in Seoul.
 
 The dataset was sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/) and described in studies by Sathishkumar V E, Jangwoo Park, and Yongyun Cho.
 
@@ -21,112 +37,14 @@ The dataset was sourced from the [UCI Machine Learning Repository](https://archi
 ## 📈 Project Features
 
 - 🔍 Predicts **hourly rental demand** based on weather and calendar variables
-- 📦 Fully **Dockerized** environment setup for easy reproducibility
-- 🛠 Automated workflows with **Makefile** commands
-- 📊 Exploratory Data Analysis (EDA), model fitting, evaluation
-- 📝 Comprehensive reporting and model interpretation
+- 📦 Fully **Dockerized** environment for reproducible analysis
+- 🛠 Automated workflows using **Makefile** commands
+- 📊 Comprehensive **EDA, model fitting, and evaluation**
+- 📝 Detailed project documentation created using **Quarto**
 
 ---
 
-## 🖥️ Setup Instructions
+## 📚 Learn More
 
-### 1️⃣ Pre-requisites
-
-- Docker (latest version)
-- Docker Compose
-- Conda and Conda-Lock
-
-### 2️⃣ Run the Analysis
-
-**Start Docker Compose**:
-
-```bash
-docker compose up
-```
-
-Open the link provided (`http://127.0.0.1:8888/lab?token=...`) in your browser to launch JupyterLab.
-
----
-
-### 3️⃣ Reset or Rerun the Workflow
-
-**Clean previously generated outputs:**
-
-```bash
-make clean
-```
-
-**Run the full analysis pipeline:**
-
-```bash
-make all
-```
-
-**Run individual steps:**
-
-```bash
-make dats
-make preprocess
-make eda
-make fit
-make evaluate
-```
-
----
-
-### 🧹 Cleaning Commands
-
-You can clean specific artifacts with:
-
-```bash
-make clean-dats
-make clean-figs
-make clean-tables
-make clean-models
-make clean-reports
-```
-
----
-
-## 📦 Adding a New Dependency
-
-1. Add the dependency to `environment.yml`
-2. Update lock file:
-
-```bash
-conda-lock -k explicit --file environments/environment.yml -p linux-64
-```
-
-3. Rebuild Docker image
-4. Update `docker-compose.yml` to use the new image tag
-5. Push and submit a Pull Request
-
----
-
-## 📝 License
-
-- Software code: [MIT License](https://opensource.org/licenses/MIT)
-- Report: [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
----
-
-## 👥 Authors
-
-- Elaine Chu  
-- Lukman Lateef  
-- Dhruv Garg  
-- Eugene You  
-- Shawn Xiao Hu
-
----
-
-## 📚 References
-
-- [UCI Machine Learning Repository](https://archive.ics.uci.edu/)
-- Sathishkumar V E, Jangwoo Park, Yongyun Cho. *Using data mining techniques for bike sharing demand prediction in Metropolitan city*, Computer Communications (2020).
-- Sathishkumar V E, Yongyun Cho. *A rule-based model for Seoul Bike sharing demand prediction using Weather data*, European Journal of Remote Sensing (2020).
-
----
-
-
-
+You can find more information about the project in the [GitHub repository](https://github.com/UBC-MDS/DSCI522-2425-28-rental-bike-prediction).  
+Please refer to the **README** file in the repository for detailed setup instructions and project usage guidelines.
