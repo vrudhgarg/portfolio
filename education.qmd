@@ -1,0 +1,32 @@
+---
+title: "Education"
+page-layout: full
+format:
+  html:
+    toc: false
+    number-sections: false
+---
+
+<div class="section-light">
+<h2 class="section-heading">My Educational Journey</h2>
+
+<div class="card-container">
+
+<!-- Degree 1 -->
+<div class="portfolio-card">
+  <img src="images/ubc_logo.png" width="60" alt="UBC Logo">
+  <h4>Master of Data Science (MDS)</h4>
+  <p style="padding: 0 20px; text-align: center;">University of British Columbia (UBC)<br>2024–2025</p>
+  <p style="font-size: 0.9em; padding-top: 0.5em;">Focus: Machine Learning, Big Data, Software Engineering</p>
+</div>
+
+<!-- Degree 2 -->
+<div class="portfolio-card">
+  <img src="images/snu_logo.png" width="60" alt="SNU Logo">
+  <h4>Bachelor of Technology (B.Tech)</h4>
+  <p style="padding: 0 20px; text-align: center;">Shiv Nadar University<br>2017–2021</p>
+  <p style="font-size: 0.9em; padding-top: 0.5em;">Major: Computer Science and Engineering</p>
+</div>
+
+</div>
+</div>

@@ -32,7 +32,7 @@ title-block-banner: false
   <img src="images/education-icon.png" width="60" alt="Education">
 <h4 style="padding: 0 30px; text-align: center;">Education</h4>
   <p style="padding-left: 5px; padding-right: 5px;">Degrees and certifications that built my foundation.</p>
-  <a class="btn" href="about.qmd#education">View Education</a>
+  <a class="btn" href="education.qmd">View Education</a>
 </div>
 
 <!-- Experience -->
