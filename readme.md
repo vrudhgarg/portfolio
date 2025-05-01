@@ -150,17 +150,5 @@ https://your-username.github.io/your-repo-name/
 - Keep naming consistent (lowercase filenames, no spaces).
 
 ---
-```
 
----
-
-# ✅ This README Covers:
-
-- How your portfolio is structured
-- How to edit/add new content
-- How to deploy
-- Maintenance checklist
-- Best practices for future updates
-
----
 

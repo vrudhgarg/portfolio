@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2025-04-10">
 
-<title>Welcome To My Blog – Dhruv Garg</title>
+<title>readme – Dhruv Garg</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,17 +104,17 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Dhruv Garg</span>
     </a>
   </div>
@@ -93,21 +125,25 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resume.html"> 
+    <a class="nav-link" href="./resume.html"> 
 <span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./education.html"> 
+<span class="menu-text">Education</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -128,53 +164,197 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">April 10, 2025</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
 
+<section id="dhruv-garg-portfolio-website" class="level1">
+<h1>Dhruv Garg — Portfolio Website</h1>
+<p>This is the source for my personal portfolio website, built using <strong><a href="https://quarto.org/">Quarto</a></strong>, <strong>HTML</strong>, and <strong>CSS</strong>.</p>
+<p>It showcases my: - Projects - Education - Experience - Resume - Contact links</p>
+<hr>
+<section id="project-structure" class="level2">
+<h2 class="anchored" data-anchor-id="project-structure">📂 Project Structure</h2>
+<pre><code>├── index.qmd           # Homepage
+├── about.qmd           # About Me page
+├── projects.qmd        # Listing page for all projects (auto or manual)
+├── resume.qmd          # Resume page (optional)
+├── education.qmd       # Education and certifications (new page)
+├── posts/              # Folder containing individual project pages
+│    ├── project1.qmd
+│    ├── project2.qmd
+│    └── ...
+├── images/             # Images (logos, project screenshots, gifs)
+├── styles.css          # Custom CSS for layout and design
+├── _quarto.yml         # Quarto site configuration
+└── README.md           # This file</code></pre>
+<hr>
+</section>
+<section id="how-to-edit-or-add-content" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-edit-or-add-content">🛠 How to Edit or Add Content</h2>
+<section id="homepage-index.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="homepage-index.qmd">1. Homepage (<code>index.qmd</code>)</h3>
+<ul>
+<li>The homepage contains cards for:
+<ul>
+<li>Projects</li>
+<li>Education</li>
+<li>Experience</li>
+</ul></li>
+<li><strong>Important</strong>: The “View Education” button links to <code>education.qmd</code> now, not <code>about.qmd#education</code>.</li>
+</ul>
+<blockquote class="blockquote">
+<p>To add/change cards on the homepage, edit the <code>&lt;div class="portfolio-card"&gt;</code> blocks inside <code>index.qmd</code>.</p>
+</blockquote>
+<hr>
+</section>
+<section id="projects-projects.qmd-posts" class="level3">
+<h3 class="anchored" data-anchor-id="projects-projects.qmd-posts">2. Projects (<code>projects.qmd</code> + <code>posts/</code>)</h3>
+<ul>
+<li><code>projects.qmd</code> lists projects automatically if you use the <code>listing:</code> feature.</li>
+<li>Each project has a file inside the <code>posts/</code> folder.</li>
+<li>Example project file: <code>posts/retailpulse.qmd</code></li>
+</ul>
+<blockquote class="blockquote">
+<p>To add a new project, create a new <code>.qmd</code> inside <code>posts/</code> and Quarto will pick it up.</p>
+</blockquote>
+<hr>
+</section>
+<section id="education-education.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="education-education.qmd">3. Education (<code>education.qmd</code>)</h3>
+<ul>
+<li><code>education.qmd</code> uses a <strong>stacked layout</strong> — degrees first, certificates after.</li>
+<li>To add a new degree or certificate:
+<ol type="1">
+<li>Copy an <code>&lt;div class="education-item"&gt;</code> block.</li>
+<li>Update the title, organization, year, and description.</li>
+<li>(Optional) Add/update logos in <code>images/</code>.</li>
+</ol></li>
+</ul>
+<hr>
+</section>
+<section id="experience-about.qmd-or-future-experience.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="experience-about.qmd-or-future-experience.qmd">4. Experience (<code>about.qmd</code> or future <code>experience.qmd</code>)</h3>
+<ul>
+<li>Currently linked as a placeholder to <code>about.qmd#experience</code>.</li>
+<li>If you want a full new Experience page later, create <code>experience.qmd</code> separately.</li>
+</ul>
+<hr>
+</section>
+<section id="styling-styles.css" class="level3">
+<h3 class="anchored" data-anchor-id="styling-styles.css">5. Styling (<code>styles.css</code>)</h3>
+<ul>
+<li>Main styling such as:
+<ul>
+<li>Card layout</li>
+<li>Section headings</li>
+<li>Button hover effects</li>
+<li>Fonts and responsiveness</li>
+</ul></li>
+<li>Edit <code>styles.css</code> to customize the look of cards, sections, or entire site theme.</li>
+</ul>
+<hr>
+</section>
+<section id="site-configuration-_quarto.yml" class="level3">
+<h3 class="anchored" data-anchor-id="site-configuration-_quarto.yml">6. Site Configuration (<code>_quarto.yml</code>)</h3>
+<ul>
+<li>Controls the navbar links, site title, theme, and external assets.</li>
+<li>If you add a new major page like <code>education.qmd</code> or <code>experience.qmd</code>, consider adding it to <code>_quarto.yml</code> under <code>navbar:</code>.</li>
+</ul>
+<p>Example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> projects.qmd</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Projects</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> education.qmd</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Education</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> resume.qmd</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Resume</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+</section>
+<section id="deployment-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="deployment-github-pages">🌐 Deployment (GitHub Pages)</h2>
+<p>To deploy the portfolio:</p>
+<ol type="1">
+<li>Render the site locally:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li><p>Push changes to GitHub.</p></li>
+<li><p>Enable GitHub Pages:</p>
+<ul>
+<li>Branch: <code>gh-pages</code> (if using <code>quarto publish gh-pages</code>)</li>
+<li>Or use <code>/docs</code> folder if manually setting <code>output-dir: docs</code> in <code>_quarto.yml</code>.</li>
+</ul></li>
+<li><p>Your live website will be at:</p></li>
+</ol>
+<pre><code>https://your-username.github.io/your-repo-name/</code></pre>
+<hr>
+</section>
+<section id="quick-future-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="quick-future-checklist">📝 Quick Future Checklist</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 76%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Task</th>
+<th style="text-align: left;">Reminder</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Adding new project</td>
+<td style="text-align: left;">Create new <code>.qmd</code> inside <code>posts/</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adding new degree/certificate</td>
+<td style="text-align: left;">Add new block inside <code>education.qmd</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Adding experience</td>
+<td style="text-align: left;">Create or update <code>about.qmd</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Updating styles</td>
+<td style="text-align: left;">Modify <code>styles.css</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Updating site settings</td>
+<td style="text-align: left;">Modify <code>_quarto.yml</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Deploy new changes</td>
+<td style="text-align: left;"><code>quarto render</code> + Push to GitHub</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">📌 Notes</h2>
+<ul>
+<li>Always keep images optimized (small size, high clarity).</li>
+<li>Preview locally with <code>quarto preview</code> before pushing changes.</li>
+<li>Keep naming consistent (lowercase filenames, no spaces).</li>
+</ul>
+<hr>
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
