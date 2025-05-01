@@ -11,14 +11,14 @@ It showcases my:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── index.qmd           # Homepage
 ├── about.qmd           # About Me page
-├── projects.qmd        # Listing page for all projects (auto or manual)
-├── resume.qmd          # Resume page (optional)
-├── education.qmd       # Education and certifications (new page)
+├── projects.qmd        # Listing page for all projects 
+├── resume.qmd          # Resume page 
+├── education.qmd       # Education and certifications 
 ├── posts/              # Folder containing individual project pages
 │    ├── project1.qmd
 │    ├── project2.qmd
@@ -31,7 +31,7 @@ It showcases my:
 
 ---
 
-## 🛠 How to Edit or Add Content
+## How to Edit or Add Content
 
 ### 1. Homepage (`index.qmd`)
 
@@ -39,7 +39,7 @@ It showcases my:
   - Projects
   - Education
   - Experience
-- **Important**: The "View Education" button links to `education.qmd` now, not `about.qmd#education`.
+- **Important**: The "View Education" button links to `education.qmd`.
 
 > To add/change cards on the homepage, edit the `<div class="portfolio-card">` blocks inside `index.qmd`.
 
@@ -67,8 +67,7 @@ It showcases my:
 
 ### 4. Experience (`about.qmd` or future `experience.qmd`)
 
-- Currently linked as a placeholder to `about.qmd#experience`.
-- If you want a full new Experience page later, create `experience.qmd` separately.
+- Linked to `experience.qmd`.
 
 ---
 
@@ -106,7 +105,7 @@ website:
 
 ---
 
-## 🌐 Deployment (GitHub Pages)
+## Deployment (GitHub Pages)
 
 To deploy the portfolio:
 
@@ -130,7 +129,7 @@ https://your-username.github.io/your-repo-name/
 
 ---
 
-## 📝 Quick Future Checklist
+## Quick Future Checklist
 
 | Task                           | Reminder |
 |:--------------------------------|:---------|
@@ -140,14 +139,6 @@ https://your-username.github.io/your-repo-name/
 | Updating styles                 | Modify `styles.css` |
 | Updating site settings          | Modify `_quarto.yml` |
 | Deploy new changes              | `quarto render` + Push to GitHub |
-
----
-
-## 📌 Notes
-
-- Always keep images optimized (small size, high clarity).
-- Preview locally with `quarto preview` before pushing changes.
-- Keep naming consistent (lowercase filenames, no spaces).
 
 ---
 
