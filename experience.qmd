@@ -14,7 +14,7 @@ format:
 <div class="education-item">
   <img src="images/ubc_logo.png" width="50" style="float: left; margin-right: 20px;">
   <h3>Graduate academic Assistant</h3>
-  <p><strong>Highbrow Technology Inc Limited</strong> | Dec 2024 – Mar 2025<br><em>Vancouver, USA</em></p>
+  <p><strong>Highbrow Technology Inc Limited</strong> | Dec 2024 – Mar 2025<br><em>Vancouver, Canada</em></p>
   <ul>
     <li>Evaluated 4–8 applications per week for the MDS program, assessing candidates' suitability.</li>
   </ul>
