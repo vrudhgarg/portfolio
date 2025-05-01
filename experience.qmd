@@ -29,7 +29,6 @@ format:
   <h3>Data Scientist</h3>
   <p><strong>Highbrow Technology Inc Limited</strong> | Apr 2024 – Aug 2024<br><em>Remote – NC, USA</em></p>
   <ul>
-    <li>Implemented systematic evaluation frameworks to assess LLM outputs across multiple parameters including accuracy, coherence, and task completion</li>
     <li>Implemented systematic evaluation frameworks to assess LLM outputs across multiple dimensions including accuracy, coherence, and task completion.</li>
     <li>Analyzed and quality-assured 100+ Python scripts weekly, ensuring code quality and maintaining evaluation standards for LLM testing.</li>
   </ul>
