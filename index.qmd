@@ -40,7 +40,7 @@ title-block-banner: false
   <img src="images/work-icon.png" width="60">
 <h4 style="padding-bottom: 25px; padding-left: 20px;">Experience</h4>
 <p style="padding-left: 20px; padding-right: 20px; padding-bottom: 8px; padding-top: 15px">Why you should hire me?</p>
-  <a class="btn" href="about.qmd#experience">View Experience</a>
+  <a class="btn" href="experience.qmd">View Experience</a>
 </div>
 
 </div>

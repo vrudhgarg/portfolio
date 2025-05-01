@@ -1,0 +1,56 @@
+---
+title: "Professional Experience"
+page-layout: full
+format:
+  html:
+    toc: false
+    number-sections: false
+---
+
+<div class="section-light">
+
+# 💼 Work Experience
+<!-- Experience 1 -->
+<div class="education-item">
+  <img src="images/ubc_logo.png" width="50" style="float: left; margin-right: 20px;">
+  <h3>Graduate academic Assistant</h3>
+  <p><strong>Highbrow Technology Inc Limited</strong> | Dec 2024 – Mar 2025<br><em>Vancouver, USA</em></p>
+  <ul>
+    <li>Evaluated 4–8 applications per week for the MDS program, assessing candidates' suitability.</li>
+  </ul>
+</div>
+
+<br><hr><br>
+
+
+<!-- Experience 2 -->
+<div class="education-item">
+  <img src="images/highbrow_logo.png" width="70" style="float: left; margin-right: 20px;">
+  <h3>Data Scientist</h3>
+  <p><strong>Highbrow Technology Inc Limited</strong> | Apr 2024 – Aug 2024<br><em>Remote – NC, USA</em></p>
+  <ul>
+    <li>Implemented systematic evaluation frameworks to assess LLM outputs across multiple parameters including accuracy, coherence, and task completion</li>
+    <li>Implemented systematic evaluation frameworks to assess LLM outputs across multiple dimensions including accuracy, coherence, and task completion.</li>
+    <li>Analyzed and quality-assured 100+ Python scripts weekly, ensuring code quality and maintaining evaluation standards for LLM testing.</li>
+  </ul>
+</div>
+
+<br><hr><br>
+
+<!-- Experience 3 -->
+<div class="education-item">
+  <img src="images/sprighub_logo.png" width="70" style="float: left; margin-right: 20px;">
+  <h3>Data Scientist</h3>
+  <p><strong>SprigHub</strong> | Mar 2021 – Apr 2024<br><em>Remote – CA, USA</em></p>
+  <ul>
+    <li>Co-developed a serverless forecasting model using Python, SQL, and AWS Lambda, helping clients accurately forecast revenue and make informed decisions.</li>
+    <li>Designed a statistical marketing attribution model that improved ROI by 5–7% through better platform-level conversion tracking.</li>
+    <li>Optimized attribution workflows with PySpark and SQL, cutting job costs by 70% while handling 10+ million records from GA4.</li>
+    <li>Built an ML-based attribution model using AWS SageMaker, XGBoost, and clustering techniques to enhance model accuracy.</li>
+    <li>Created scalable ETL pipelines in Python and PySpark to transfer data from Google Cloud to AWS, enabling seamless data integration.</li>
+    <li>Delivered automated insights with Python, Pandas, and Scikit-learn — improving data analysis efficiency by 30%.</li>
+    <li>Collaborated with UI and DevOps teams to ensure smooth feature rollouts, and built dashboards for client-facing performance tracking.</li>
+  </ul>
+</div>
+
+</div>
