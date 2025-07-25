@@ -13,8 +13,20 @@ format:
 <!-- Experience 1 -->
 <div class="education-item">
   <img src="images/ubc_logo.png" width="50" style="float: left; margin-right: 20px;">
-  <h3>Graduate academic Assistant</h3>
-  <p><strong>Highbrow Technology Inc Limited</strong> | Dec 2024 – Mar 2025<br><em>Vancouver, Canada</em></p>
+  <h3>Teaching Assistant</h3>
+  <p><strong>University of British Columbia</strong> | June 2025 – July 2025<br><em>Vancouver, Canada</em></p>
+  <ul>
+    <li>Supported Professional MBA students in mastering Python programming concepts, including data visualization using Matplotlib. Clarified course material, and provided guidance on assignments and best practices in coding for analytics.</li>
+  </ul>
+</div>
+
+<br><hr><br>
+
+<!-- Experience 2 -->
+<div class="education-item">
+  <img src="images/ubc_logo.png" width="50" style="float: left; margin-right: 20px;">
+  <h3>Graduate Academic Assistant</h3>
+  <p><strong>University of British Columbia</strong> | Dec 2024 – Mar 2025<br><em>Vancouver, Canada</em></p>
   <ul>
     <li>Evaluated 4–8 applications per week for the MDS program, assessing candidates' suitability.</li>
   </ul>
@@ -23,7 +35,7 @@ format:
 <br><hr><br>
 
 
-<!-- Experience 2 -->
+<!-- Experience 3 -->
 <div class="education-item">
   <img src="images/highbrow_logo.png" width="70" style="float: left; margin-right: 20px;">
   <h3>Data Scientist</h3>
@@ -36,7 +48,7 @@ format:
 
 <br><hr><br>
 
-<!-- Experience 3 -->
+<!-- Experience 4 -->
 <div class="education-item">
   <img src="images/sprighub_logo.png" width="70" style="float: left; margin-right: 20px;">
   <h3>Data Scientist</h3>
