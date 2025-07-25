@@ -6,7 +6,7 @@ title-block-banner: false
 <div class="center intro-section">
   <h1 class="name-heading">Dhruv Garg</h1>
   <p class="intro-subheading">Data Scientist &nbsp;|&nbsp; MDS @ UBC</p>
-  <p class="intro-text">3+ years of real-world impact with ML & data engineering</p>
+  <p class="intro-text">4 years of real-world impact with ML & data engineering</p>
 </div>
 
 
