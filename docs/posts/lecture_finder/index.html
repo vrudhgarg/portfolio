@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-07-30">
+<meta name="description" content="A Retrieval-Augmented Generation (RAG) app for querying lecture notes via LangChain, ChromaDB, and LLMs like OpenAI.">
 
-<title>Projects – Dhruv Garg</title>
+<title>Lecture RAG Assistant: Conversational Q&amp;A Over Lecture Notes – Dhruv Garg</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,69 +102,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -140,7 +116,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Dhruv Garg</span>
     </a>
   </div>
@@ -151,21 +127,21 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -188,244 +164,198 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Projects</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Lecture RAG Assistant: Conversational Q&amp;A Over Lecture Notes</h1>
+                  <div>
+        <div class="description">
+          A Retrieval-Augmented Generation (RAG) app for querying lecture notes via LangChain, ChromaDB, and LLMs like OpenAI.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Python</div>
+                <div class="quarto-category">RAG</div>
+                <div class="quarto-category">LLM</div>
+                <div class="quarto-category">LangChain</div>
+                <div class="quarto-category">Lecture Notes</div>
+                <div class="quarto-category">Streamlit</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 30, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Crime">Crime <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Dash">Dash <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Visualization">Data Visualization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Docker">Docker <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Forecasting">Forecasting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLM">LLM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LangChain">LangChain <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Lecture Notes">Lecture Notes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Number Theory">Number Theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Package">Package <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Project Euler">Project Euler <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(4)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RAG">RAG <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Retail">Retail <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Shiny">Shiny <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Streamlit">Streamlit <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Visualization">Visualization <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lecture-rag-assistant" id="toc-lecture-rag-assistant" class="nav-link active" data-scroll-target="#lecture-rag-assistant">📚 Lecture RAG Assistant</a></li>
+  <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure">Project Structure</a></li>
+  <li><a href="#setup-instructions" id="toc-setup-instructions" class="nav-link" data-scroll-target="#setup-instructions">Setup Instructions</a>
+  <ul class="collapse">
+  <li><a href="#install-dependencies" id="toc-install-dependencies" class="nav-link" data-scroll-target="#install-dependencies">1. Install Dependencies</a></li>
+  <li><a href="#ingest-lecture-notes" id="toc-ingest-lecture-notes" class="nav-link" data-scroll-target="#ingest-lecture-notes">2. Ingest Lecture Notes</a></li>
+  <li><a href="#launch-the-qa-dashboard" id="toc-launch-the-qa-dashboard" class="nav-link" data-scroll-target="#launch-the-qa-dashboard">3. Launch the Q&amp;A Dashboard</a></li>
+  </ul></li>
+  <li><a href="#api-key-setup" id="toc-api-key-setup" class="nav-link" data-scroll-target="#api-key-setup">🔑 API Key Setup</a></li>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">🧐 How It Works</a>
+  <ul class="collapse">
+  <li><a href="#ingestion-ingest.py" id="toc-ingestion-ingest.py" class="nav-link" data-scroll-target="#ingestion-ingest.py">Ingestion (<code>ingest.py</code>)</a></li>
+  <li><a href="#retrieval-qa_pipeline.py" id="toc-retrieval-qa_pipeline.py" class="nav-link" data-scroll-target="#retrieval-qa_pipeline.py">Retrieval (<code>qa_pipeline.py</code>)</a></li>
+  <li><a href="#interaction-app.py" id="toc-interaction-app.py" class="nav-link" data-scroll-target="#interaction-app.py">Interaction (<code>app.py</code>)</a></li>
+  </ul></li>
+  <li><a href="#optional-features-todo" id="toc-optional-features-todo" class="nav-link" data-scroll-target="#optional-features-todo">🚀 Optional Features (TODO)</a></li>
+  <li><a href="#credits" id="toc-credits" class="nav-link" data-scroll-target="#credits">🙌 Credits</a></li>
+  <li><a href="#example-questions" id="toc-example-questions" class="nav-link" data-scroll-target="#example-questions">💬 Example Questions</a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">🔗 Learn More</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p><a href="https://www.langchain.com/"><img src="https://img.shields.io/badge/LangChain-Enabled-blue.png" class="img-fluid" alt="LangChain"></a> <a href="https://platform.openai.com/"><img src="https://img.shields.io/badge/OpenAI-Compatible-ff69b4.png" class="img-fluid" alt="OpenAI"></a> <a href="https://streamlit.io/"><img src="https://img.shields.io/badge/Streamlit-UI-orange.png" class="img-fluid" alt="Streamlit"></a> <a href="https://github.com/your-org/lecture_rag/blob/main/LICENSE"><img src="https://img.shields.io/github/license/your-org/lecture_rag.png" class="img-fluid" alt="License"></a></p>
+<hr>
+<section id="lecture-rag-assistant" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-rag-assistant">📚 Lecture RAG Assistant</h2>
+<p><strong>Lecture RAG Assistant</strong> is a Retrieval-Augmented Generation (RAG) pipeline for querying lecture notes in <code>.ipynb</code> and <code>.pdf</code> format using a conversational interface powered by LLMs.</p>
+<p>It combines the power of <strong>LangChain</strong>, <strong>ChromaDB</strong>, <strong>HuggingFace Embeddings</strong>, and <strong>OpenAI models</strong> (or local models) to generate accurate, source-grounded answers from your personal lecture material.</p>
+<hr>
+</section>
+<section id="project-structure" class="level2">
+<h2 class="anchored" data-anchor-id="project-structure">Project Structure</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">lecture_rag/</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> app.py               <span class="co"># Streamlit dashboard for Q&amp;A</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> ingest.py            <span class="co"># Extracts &amp; chunks lecture files, saves to ChromaDB</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> qa_pipeline.py       <span class="co"># Loads retriever + LLM to create QA chain</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> lectures/            <span class="co"># Directory with lecture PDFs/Notebooks</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> chroma_langchain_db/ <span class="co"># Persisted vector DB (auto-created)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> README.md            <span class="co"># Project documentation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="setup-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="setup-instructions">Setup Instructions</h2>
+<section id="install-dependencies" class="level3">
+<h3 class="anchored" data-anchor-id="install-dependencies">1. Install Dependencies</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Or install manually:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install langchain openai chromadb streamlit sentence-transformers PyMuPDF</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="ingest-lecture-notes" class="level3">
+<h3 class="anchored" data-anchor-id="ingest-lecture-notes">2. Ingest Lecture Notes</h3>
+<p>Put <code>.pdf</code> and/or <code>.ipynb</code> files in the <code>./lectures/</code> folder and run:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> ingest.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will:</p>
+<ul>
+<li>Recursively scan the lecture folder</li>
+<li>Chunk the content intelligently</li>
+<li>Embed chunks with SentenceTransformers</li>
+<li>Save the vector DB in ChromaDB</li>
+</ul>
+</section>
+<section id="launch-the-qa-dashboard" class="level3">
+<h3 class="anchored" data-anchor-id="launch-the-qa-dashboard">3. Launch the Q&amp;A Dashboard</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">streamlit</span> run app.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Use the web app to:</p>
+<ul>
+<li>Ask questions about your lecture content</li>
+<li>See grounded responses with source highlighting</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="api-key-setup" class="level2">
+<h2 class="anchored" data-anchor-id="api-key-setup">🔑 API Key Setup</h2>
+<p>To use OpenAI models like <code>gpt-3.5-turbo</code>, set:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">OPENAI_API_KEY</span><span class="op">=</span><span class="st">"your_openai_key_here"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If no key is found, the app skips LLM inference gracefully.</p>
+<hr>
+</section>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">🧐 How It Works</h2>
+<section id="ingestion-ingest.py" class="level3">
+<h3 class="anchored" data-anchor-id="ingestion-ingest.py">Ingestion (<code>ingest.py</code>)</h3>
+<ul>
+<li>Loads <code>.ipynb</code> via <code>NotebookLoader</code>, <code>.pdf</code> via <code>PyPDFLoader</code></li>
+<li>Splits text with <code>RecursiveCharacterTextSplitter</code></li>
+<li>Embeds using <code>all-mpnet-base-v2</code></li>
+<li>Stores in a persistent ChromaDB vector store</li>
+</ul>
+</section>
+<section id="retrieval-qa_pipeline.py" class="level3">
+<h3 class="anchored" data-anchor-id="retrieval-qa_pipeline.py">Retrieval (<code>qa_pipeline.py</code>)</h3>
+<ul>
+<li>Loads the vector DB as retriever</li>
+<li>Wraps LLM and retriever with <code>RetrievalQA</code> from LangChain</li>
+</ul>
+</section>
+<section id="interaction-app.py" class="level3">
+<h3 class="anchored" data-anchor-id="interaction-app.py">Interaction (<code>app.py</code>)</h3>
+<ul>
+<li>Accepts user question</li>
+<li>Fetches relevant chunks</li>
+<li>Constructs answer and shows references</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="optional-features-todo" class="level2">
+<h2 class="anchored" data-anchor-id="optional-features-todo">🚀 Optional Features (TODO)</h2>
+<ul>
+<li>Support for <code>.md</code> or <code>.html</code> files</li>
+<li>Upload feature in Streamlit</li>
+<li>Use local LLMs (e.g., Mistral, Llama.cpp)</li>
+<li>Rerank retrieved chunks for better answers</li>
+</ul>
+<hr>
+</section>
+<section id="credits" class="level2">
+<h2 class="anchored" data-anchor-id="credits">🙌 Credits</h2>
+<ul>
+<li>Built with <strong>LangChain</strong></li>
+<li>Embeddings via <strong>SentenceTransformers</strong></li>
+<li>PDF parsing by <strong>PyMuPDF</strong></li>
+<li>Interface via <strong>Streamlit</strong></li>
+</ul>
+<hr>
+</section>
+<section id="example-questions" class="level2">
+<h2 class="anchored" data-anchor-id="example-questions">💬 Example Questions</h2>
+<ul>
+<li>“What is a confounding variable?”</li>
+<li>“How does backpropagation work?”</li>
+<li>“What are the assumptions of linear regression?”</li>
+</ul>
+<hr>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">🔗 Learn More</h2>
+<p>Visit the <a href="https://github.com/vrudhgarg/lecture_search">GitHub repository</a> for full setup, contribution guide, and demo walkthroughs.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Python,RAG,LLM,LangChain,Lecture Notes,Streamlit" data-listing-date-sort="1753858800000" data-listing-file-modified-sort="1753838326620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="372">
-<div class="thumbnail">
-<p><a href="./posts/lecture_finder/index.html" class="no-external"></a></p><a href="./posts/lecture_finder/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/lecture_finder/lecture_rag.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/lecture_finder/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/lecture_finder/index.html" class="no-external">Lecture RAG Assistant: Conversational Q&amp;A Over Lecture Notes</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/lecture_finder/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RAG'); return false;">
-RAG
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLM'); return false;">
-LLM
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LangChain'); return false;">
-LangChain
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Lecture Notes'); return false;">
-Lecture Notes
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Streamlit'); return false;">
-Streamlit
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/lecture_finder/index.html" class="no-external">A Retrieval-Augmented Generation (RAG) app for querying lecture notes via LangChain, ChromaDB, and LLMs like OpenAI.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/lecture_finder/index.html" class="no-external">
-<div class="listing-date">
-Jul 30, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Dash,Visualization,Retail,Python" data-listing-date-sort="1742194800000" data-listing-file-modified-sort="1745908961931" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
-<div class="thumbnail">
-<p><a href="./posts/retail_pulse/index.html" class="no-external"></a></p><a href="./posts/retail_pulse/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/retail_pulse/image.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/retail_pulse/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/retail_pulse/index.html" class="no-external">RetailPulse: Online Retail Analytics Dashboard</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/retail_pulse/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Dash'); return false;">
-Dash
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Visualization'); return false;">
-Visualization
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Retail'); return false;">
-Retail
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/retail_pulse/index.html" class="no-external">An interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/retail_pulse/index.html" class="no-external">
-<div class="listing-date">
-Mar 17, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="R,Shiny,Data Visualization,Crime" data-listing-date-sort="1740729600000" data-listing-file-modified-sort="1745909271523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
-<div class="thumbnail">
-<p><a href="./posts/vancouver_crime/index.html" class="no-external"></a></p><a href="./posts/vancouver_crime/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/vancouver_crime/vancouver_crime_stats.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/vancouver_crime/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/vancouver_crime/index.html" class="no-external">Vancouver Crime Statistics Dashboard</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/vancouver_crime/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Shiny'); return false;">
-Shiny
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Data Visualization'); return false;">
-Data Visualization
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Crime'); return false;">
-Crime
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/vancouver_crime/index.html" class="no-external">An interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/vancouver_crime/index.html" class="no-external">
-<div class="listing-date">
-Feb 28, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Python,Package,Project Euler,Number Theory" data-listing-date-sort="1738569600000" data-listing-file-modified-sort="1745908541844" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
-<div class="thumbnail">
-<p><a href="./posts/num-theory/index.html" class="no-external"></a></p><a href="./posts/num-theory/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/num-theory/num_theory.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/num-theory/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/num-theory/index.html" class="no-external">Number Theory Utilities for Project Euler</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/num-theory/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Package'); return false;">
-Package
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Project Euler'); return false;">
-Project Euler
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Number Theory'); return false;">
-Number Theory
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/num-theory/index.html" class="no-external">A Python package developed to practice open-source publishing workflows, automation, and best practices for user-friendly libraries.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/num-theory/index.html" class="no-external">
-<div class="listing-date">
-Feb 3, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Python,Machine Learning,Forecasting,Docker" data-listing-date-sort="1734336000000" data-listing-file-modified-sort="1745909011165" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214">
-<div class="thumbnail">
-<p><a href="./posts/seoul_bike_predictor/index.html" class="no-external"></a></p><a href="./posts/seoul_bike_predictor/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/seoul_bike_predictor/docker_project.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/seoul_bike_predictor/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/seoul_bike_predictor/index.html" class="no-external">Seoul Bike Share Predictor</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/seoul_bike_predictor/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Forecasting'); return false;">
-Forecasting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Docker'); return false;">
-Docker
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/seoul_bike_predictor/index.html" class="no-external">Predicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/seoul_bike_predictor/index.html" class="no-external">
-<div class="listing-date">
-Dec 16, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

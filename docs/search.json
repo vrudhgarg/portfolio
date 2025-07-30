@@ -77,25 +77,67 @@
     "text": "📚 Learn More\nYou can find more information about the project in the GitHub repository.\nPlease refer to the README file in the repository for detailed setup instructions and project usage guidelines."
   },
   {
-    "objectID": "posts/num-theory/index.html#about-the-package",
-    "href": "posts/num-theory/index.html#about-the-package",
-    "title": "Number Theory Utilities for Project Euler",
-    "section": "📦 About the Package",
-    "text": "📦 About the Package\nnum_theory is a high-performance Python package designed to simplify solving number theory problems — especially those from Project Euler.\nThe primary goal of this project was to gain practical experience in creating and publishing an open-source Python package by following industry best practices."
+    "objectID": "posts/lecture_finder/index.html#lecture-rag-assistant",
+    "href": "posts/lecture_finder/index.html#lecture-rag-assistant",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "📚 Lecture RAG Assistant",
+    "text": "📚 Lecture RAG Assistant\nLecture RAG Assistant is a Retrieval-Augmented Generation (RAG) pipeline for querying lecture notes in .ipynb and .pdf format using a conversational interface powered by LLMs.\nIt combines the power of LangChain, ChromaDB, HuggingFace Embeddings, and OpenAI models (or local models) to generate accurate, source-grounded answers from your personal lecture material."
   },
   {
-    "objectID": "posts/num-theory/index.html#project-features",
-    "href": "posts/num-theory/index.html#project-features",
-    "title": "Number Theory Utilities for Project Euler",
-    "section": "📈 Project Features",
-    "text": "📈 Project Features\nDuring the development of this package, we learned how to:\n\nManage dependencies using Poetry\nWrite and run unit tests\nSet up a CI/CD pipeline to automatically publish to PyPI\nIntegrate code coverage reporting with Codecov\nStructure projects using Cookiecutter templates\nHost project documentation on ReadTheDocs\n\nThe package includes functionalities such as:\n\nFast prime number generation\nPrimality testing\nPrime factorization\nArithmetic progression calculations\nA clean and intuitive API for easy use"
+    "objectID": "posts/lecture_finder/index.html#project-structure",
+    "href": "posts/lecture_finder/index.html#project-structure",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "Project Structure",
+    "text": "Project Structure\nlecture_rag/\n├── app.py               # Streamlit dashboard for Q&A\n├── ingest.py            # Extracts & chunks lecture files, saves to ChromaDB\n├── qa_pipeline.py       # Loads retriever + LLM to create QA chain\n├── lectures/            # Directory with lecture PDFs/Notebooks\n├── chroma_langchain_db/ # Persisted vector DB (auto-created)\n├── README.md            # Project documentation"
   },
   {
-    "objectID": "posts/num-theory/index.html#learn-more",
-    "href": "posts/num-theory/index.html#learn-more",
-    "title": "Number Theory Utilities for Project Euler",
-    "section": "📚 Learn More",
-    "text": "📚 Learn More\nYou can find more information about the project in the GitHub repository.\nPlease refer to the README file for detailed setup instructions, usage examples, and contribution guidelines."
+    "objectID": "posts/lecture_finder/index.html#setup-instructions",
+    "href": "posts/lecture_finder/index.html#setup-instructions",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "Setup Instructions",
+    "text": "Setup Instructions\n\n1. Install Dependencies\npip install -r requirements.txt\nOr install manually:\npip install langchain openai chromadb streamlit sentence-transformers PyMuPDF\n\n\n2. Ingest Lecture Notes\nPut .pdf and/or .ipynb files in the ./lectures/ folder and run:\npython ingest.py\nThis will:\n\nRecursively scan the lecture folder\nChunk the content intelligently\nEmbed chunks with SentenceTransformers\nSave the vector DB in ChromaDB\n\n\n\n3. Launch the Q&A Dashboard\nstreamlit run app.py\nUse the web app to:\n\nAsk questions about your lecture content\nSee grounded responses with source highlighting"
+  },
+  {
+    "objectID": "posts/lecture_finder/index.html#api-key-setup",
+    "href": "posts/lecture_finder/index.html#api-key-setup",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "🔑 API Key Setup",
+    "text": "🔑 API Key Setup\nTo use OpenAI models like gpt-3.5-turbo, set:\nexport OPENAI_API_KEY=\"your_openai_key_here\"\nIf no key is found, the app skips LLM inference gracefully."
+  },
+  {
+    "objectID": "posts/lecture_finder/index.html#how-it-works",
+    "href": "posts/lecture_finder/index.html#how-it-works",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "🧐 How It Works",
+    "text": "🧐 How It Works\n\nIngestion (ingest.py)\n\nLoads .ipynb via NotebookLoader, .pdf via PyPDFLoader\nSplits text with RecursiveCharacterTextSplitter\nEmbeds using all-mpnet-base-v2\nStores in a persistent ChromaDB vector store\n\n\n\nRetrieval (qa_pipeline.py)\n\nLoads the vector DB as retriever\nWraps LLM and retriever with RetrievalQA from LangChain\n\n\n\nInteraction (app.py)\n\nAccepts user question\nFetches relevant chunks\nConstructs answer and shows references"
+  },
+  {
+    "objectID": "posts/lecture_finder/index.html#optional-features-todo",
+    "href": "posts/lecture_finder/index.html#optional-features-todo",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "🚀 Optional Features (TODO)",
+    "text": "🚀 Optional Features (TODO)\n\nSupport for .md or .html files\nUpload feature in Streamlit\nUse local LLMs (e.g., Mistral, Llama.cpp)\nRerank retrieved chunks for better answers"
+  },
+  {
+    "objectID": "posts/lecture_finder/index.html#credits",
+    "href": "posts/lecture_finder/index.html#credits",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "🙌 Credits",
+    "text": "🙌 Credits\n\nBuilt with LangChain\nEmbeddings via SentenceTransformers\nPDF parsing by PyMuPDF\nInterface via Streamlit"
+  },
+  {
+    "objectID": "posts/lecture_finder/index.html#example-questions",
+    "href": "posts/lecture_finder/index.html#example-questions",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "💬 Example Questions",
+    "text": "💬 Example Questions\n\n“What is a confounding variable?”\n“How does backpropagation work?”\n“What are the assumptions of linear regression?”"
+  },
+  {
+    "objectID": "posts/lecture_finder/index.html#learn-more",
+    "href": "posts/lecture_finder/index.html#learn-more",
+    "title": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes",
+    "section": "🔗 Learn More",
+    "text": "🔗 Learn More\nVisit the GitHub repository for full setup, contribution guide, and demo walkthroughs."
   },
   {
     "objectID": "posts/vancouver_crime/index.html",
@@ -124,6 +166,27 @@
     "title": "Vancouver Crime Statistics Dashboard",
     "section": "📚 Learn More",
     "text": "📚 Learn More\nYou can find more details about the project in the GitHub repository.\nPlease refer to the README file for setup instructions, usage examples, and additional project documentation."
+  },
+  {
+    "objectID": "posts/num-theory/index.html#about-the-package",
+    "href": "posts/num-theory/index.html#about-the-package",
+    "title": "Number Theory Utilities for Project Euler",
+    "section": "📦 About the Package",
+    "text": "📦 About the Package\nnum_theory is a high-performance Python package designed to simplify solving number theory problems — especially those from Project Euler.\nThe primary goal of this project was to gain practical experience in creating and publishing an open-source Python package by following industry best practices."
+  },
+  {
+    "objectID": "posts/num-theory/index.html#project-features",
+    "href": "posts/num-theory/index.html#project-features",
+    "title": "Number Theory Utilities for Project Euler",
+    "section": "📈 Project Features",
+    "text": "📈 Project Features\nDuring the development of this package, we learned how to:\n\nManage dependencies using Poetry\nWrite and run unit tests\nSet up a CI/CD pipeline to automatically publish to PyPI\nIntegrate code coverage reporting with Codecov\nStructure projects using Cookiecutter templates\nHost project documentation on ReadTheDocs\n\nThe package includes functionalities such as:\n\nFast prime number generation\nPrimality testing\nPrime factorization\nArithmetic progression calculations\nA clean and intuitive API for easy use"
+  },
+  {
+    "objectID": "posts/num-theory/index.html#learn-more",
+    "href": "posts/num-theory/index.html#learn-more",
+    "title": "Number Theory Utilities for Project Euler",
+    "section": "📚 Learn More",
+    "text": "📚 Learn More\nYou can find more information about the project in the GitHub repository.\nPlease refer to the README file for detailed setup instructions, usage examples, and contribution guidelines."
   },
   {
     "objectID": "posts/retail_pulse/index.html",
@@ -165,7 +228,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "RetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nVancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNumber Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA Python package developed to practice open-source publishing workflows, automation, and best practices for user-friendly libraries.\n\n\n\n\n\nFeb 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSeoul Bike Share Predictor\n\n\n\n\n\n\nPython\n\n\nMachine Learning\n\n\nForecasting\n\n\nDocker\n\n\n\nPredicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows.\n\n\n\n\n\nDec 16, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Lecture RAG Assistant: Conversational Q&A Over Lecture Notes\n\n\n\n\n\n\nPython\n\n\nRAG\n\n\nLLM\n\n\nLangChain\n\n\nLecture Notes\n\n\nStreamlit\n\n\n\nA Retrieval-Augmented Generation (RAG) app for querying lecture notes via LangChain, ChromaDB, and LLMs like OpenAI.\n\n\n\n\n\nJul 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRetailPulse: Online Retail Analytics Dashboard\n\n\n\n\n\n\nDash\n\n\nVisualization\n\n\nRetail\n\n\nPython\n\n\n\nAn interactive dashboard for real-time retail insights — built with Dash, Altair, and Pandas.\n\n\n\n\n\nMar 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nVancouver Crime Statistics Dashboard\n\n\n\n\n\n\nR\n\n\nShiny\n\n\nData Visualization\n\n\nCrime\n\n\n\nAn interactive Shiny dashboard to explore neighborhood-wise crime patterns in Vancouver using time-series, heatmaps, and filters.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNumber Theory Utilities for Project Euler\n\n\n\n\n\n\nPython\n\n\nPackage\n\n\nProject Euler\n\n\nNumber Theory\n\n\n\nA Python package developed to practice open-source publishing workflows, automation, and best practices for user-friendly libraries.\n\n\n\n\n\nFeb 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSeoul Bike Share Predictor\n\n\n\n\n\n\nPython\n\n\nMachine Learning\n\n\nForecasting\n\n\nDocker\n\n\n\nPredicting hourly rental bike demand in Seoul using weather and holiday data. Built with Dockerized JupyterLab pipelines and automated workflows.\n\n\n\n\n\nDec 16, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "experience.html",
